@@ -1,0 +1,11 @@
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\bin\Debug\TimKiemPhongTro.exe.config
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\bin\Debug\TimKiemPhongTro.exe
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\bin\Debug\TimKiemPhongTro.pdb
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.AssemblyReference.cache
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.SuggestedBindingRedirects.cache
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.Properties.Resources.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.GenerateResource.cache
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.CoreCompileInputs.cache
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.exe
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.pdb
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.Form1.resources
