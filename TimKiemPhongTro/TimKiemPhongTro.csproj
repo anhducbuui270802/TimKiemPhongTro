@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,6 +64,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="components\baidang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\baidang.Designer.cs">
+      <DependentUpon>baidang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\ChuNhaSDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\ChuNhaSDT.Designer.cs">
+      <DependentUpon>ChuNhaSDT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +87,12 @@
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="components\baidang.resx">
+      <DependentUpon>baidang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\ChuNhaSDT.resx">
+      <DependentUpon>ChuNhaSDT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -71,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">
@@ -85,6 +119,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\defaultuser.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\phone-call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\zalo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\love.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
