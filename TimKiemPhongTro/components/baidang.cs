@@ -84,10 +84,15 @@ namespace TimKiemPhongTro.components
             set { _imguser = value; ptbUser.Image = value; }
         }
 
-        private void lbTitle_Click(object sender, EventArgs e)
-        {
 
+        [Category("Custom Props")]
+        public string SDT
+        {
+            get { return _sdt; }
+            set { _sdt = value; btnsdt.Text = value; }
         }
+
+
 
         private void btnZalo_MouseHover(object sender, EventArgs e)
         {
@@ -95,9 +100,22 @@ namespace TimKiemPhongTro.components
             btnZalo.ForeColor = Color.White;
         }
 
+        private void btnZalo_MouseLeave(object sender, EventArgs e)
+        {
+            btnZalo.BackColor = Color.White;
+            btnZalo.ForeColor = Color.MediumSlateBlue;
+        }
+
         private void ptbAnh_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void lbTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

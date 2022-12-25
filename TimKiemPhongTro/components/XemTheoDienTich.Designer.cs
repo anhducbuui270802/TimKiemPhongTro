@@ -47,9 +47,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.label1.Location = new System.Drawing.Point(17, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 21);
+            this.label1.Size = new System.Drawing.Size(174, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Xem theo giá";
+            this.label1.Text = "Xem theo diện tích";
             // 
             // panel3
             // 
@@ -79,6 +79,7 @@
             // lbTren90m
             // 
             this.lbTren90m.AutoSize = true;
+            this.lbTren90m.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTren90m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTren90m.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lbTren90m.Location = new System.Drawing.Point(204, 135);
@@ -88,11 +89,11 @@
             this.lbTren90m.TabIndex = 18;
             this.lbTren90m.Text = ">   Trên 90 m2";
             this.lbTren90m.Click += new System.EventHandler(this.lbTren90m_Click);
-            this.lbTren90m.MouseHover += new System.EventHandler(this.lbTren90m_MouseHover);
             // 
             // lb50_70
             // 
             this.lb50_70.AutoSize = true;
+            this.lb50_70.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb50_70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb50_70.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb50_70.Location = new System.Drawing.Point(204, 92);
@@ -102,11 +103,11 @@
             this.lb50_70.TabIndex = 17;
             this.lb50_70.Text = ">   Từ 50 - 70 m2";
             this.lb50_70.Click += new System.EventHandler(this.lb50_70_Click);
-            this.lb50_70.MouseHover += new System.EventHandler(this.lb50_70_MouseHover);
             // 
             // lb20_30
             // 
             this.lb20_30.AutoSize = true;
+            this.lb20_30.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb20_30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb20_30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb20_30.Location = new System.Drawing.Point(204, 52);
@@ -116,11 +117,11 @@
             this.lb20_30.TabIndex = 16;
             this.lb20_30.Text = ">   Từ 20 - 30 m2";
             this.lb20_30.Click += new System.EventHandler(this.lb20_30_Click);
-            this.lb20_30.MouseHover += new System.EventHandler(this.lb20_30_MouseHover);
             // 
             // lb70_90
             // 
             this.lb70_90.AutoSize = true;
+            this.lb70_90.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb70_90.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb70_90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb70_90.Location = new System.Drawing.Point(25, 135);
@@ -130,11 +131,11 @@
             this.lb70_90.TabIndex = 15;
             this.lb70_90.Text = ">   Từ 70 - 90 m2";
             this.lb70_90.Click += new System.EventHandler(this.lb70_90_Click);
-            this.lb70_90.MouseHover += new System.EventHandler(this.lb70_90_MouseHover);
             // 
             // lb30_50
             // 
             this.lb30_50.AutoSize = true;
+            this.lb30_50.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb30_50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb30_50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb30_50.Location = new System.Drawing.Point(25, 92);
@@ -144,11 +145,11 @@
             this.lb30_50.TabIndex = 14;
             this.lb30_50.Text = ">   Từ 30 - 50 m2";
             this.lb30_50.Click += new System.EventHandler(this.lb30_50_Click);
-            this.lb30_50.MouseHover += new System.EventHandler(this.lb30_50_MouseHover);
             // 
             // lbDuoi20m
             // 
             this.lbDuoi20m.AutoSize = true;
+            this.lbDuoi20m.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbDuoi20m.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDuoi20m.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lbDuoi20m.Location = new System.Drawing.Point(25, 52);
@@ -158,12 +159,12 @@
             this.lbDuoi20m.TabIndex = 13;
             this.lbDuoi20m.Text = ">   Dưới 20m2";
             this.lbDuoi20m.Click += new System.EventHandler(this.lbDuoi20m_Click);
-            this.lbDuoi20m.MouseHover += new System.EventHandler(this.lbDuoi20m_MouseHover);
             // 
             // XemTheoDienTich
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

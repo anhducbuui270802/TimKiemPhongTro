@@ -40,6 +40,7 @@
             this.lbTenNguoiDang = new System.Windows.Forms.Label();
             this.ptbUser = new System.Windows.Forms.PictureBox();
             this.ptbAnh = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUser)).BeginInit();
@@ -138,6 +139,7 @@
             this.btnZalo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnZalo.FlatAppearance.BorderSize = 0;
             this.btnZalo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnZalo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnZalo.ForeColor = System.Drawing.Color.MediumSlateBlue;
             this.btnZalo.Location = new System.Drawing.Point(358, 9);
             this.btnZalo.Name = "btnZalo";
@@ -146,6 +148,7 @@
             this.btnZalo.Text = "ZALO\r\n";
             this.btnZalo.TextColor = System.Drawing.Color.MediumSlateBlue;
             this.btnZalo.UseVisualStyleBackColor = false;
+            this.btnZalo.MouseLeave += new System.EventHandler(this.btnZalo_MouseLeave);
             this.btnZalo.MouseHover += new System.EventHandler(this.btnZalo_MouseHover);
             // 
             // btnsdt
@@ -200,11 +203,20 @@
             this.ptbAnh.TabStop = false;
             this.ptbAnh.Click += new System.EventHandler(this.ptbAnh_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DimGray;
+            this.panel3.Location = new System.Drawing.Point(0, 268);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(726, 2);
+            this.panel3.TabIndex = 5;
+            // 
             // baidang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.rtbMoTa);
             this.Controls.Add(this.panel1);
@@ -236,5 +248,6 @@
         private System.Windows.Forms.Label lbTenNguoiDang;
         private System.Windows.Forms.PictureBox ptbUser;
         private CustomButton.VBButton btnZalo;
+        private System.Windows.Forms.Panel panel3;
     }
 }

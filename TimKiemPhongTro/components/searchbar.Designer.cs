@@ -37,7 +37,8 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.ForeColor = System.Drawing.Color.Silver;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Phòng trọ, nhà trọ",
@@ -50,24 +51,28 @@
             this.comboBox1.Location = new System.Drawing.Point(16, 10);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 24);
+            this.comboBox1.Size = new System.Drawing.Size(210, 28);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.TabStop = false;
             this.comboBox1.Text = "Chọn loại bất động sản";
             // 
             // comboBox2
             // 
-            this.comboBox2.ForeColor = System.Drawing.Color.Silver;
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(239, 10);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 24);
+            this.comboBox2.Size = new System.Drawing.Size(210, 28);
             this.comboBox2.TabIndex = 1;
+            this.comboBox2.TabStop = false;
             this.comboBox2.Text = "Chọn tỉnh thành";
             // 
             // comboBox3
             // 
-            this.comboBox3.ForeColor = System.Drawing.Color.Silver;
+            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Dưới 1 triệu đồng",
@@ -81,13 +86,15 @@
             this.comboBox3.Location = new System.Drawing.Point(462, 10);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(210, 24);
+            this.comboBox3.Size = new System.Drawing.Size(210, 28);
             this.comboBox3.TabIndex = 2;
+            this.comboBox3.TabStop = false;
             this.comboBox3.Text = "Chọn giá";
             // 
             // comboBox4
             // 
-            this.comboBox4.ForeColor = System.Drawing.Color.Silver;
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Dưới 20 m2",
@@ -98,8 +105,9 @@
             "Trên 90 m2"});
             this.comboBox4.Location = new System.Drawing.Point(685, 10);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(210, 24);
+            this.comboBox4.Size = new System.Drawing.Size(210, 28);
             this.comboBox4.TabIndex = 3;
+            this.comboBox4.TabStop = false;
             this.comboBox4.Text = "Chọn diện tích";
             // 
             // btnTimKiem
@@ -111,10 +119,11 @@
             this.btnTimKiem.BorderSize = 0;
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Location = new System.Drawing.Point(925, 10);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(150, 24);
+            this.btnTimKiem.Size = new System.Drawing.Size(190, 30);
             this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "🔍Tìm kiếm";
             this.btnTimKiem.TextColor = System.Drawing.Color.White;
@@ -131,7 +140,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Name = "searchbar";
-            this.Size = new System.Drawing.Size(1100, 46);
+            this.Size = new System.Drawing.Size(1138, 52);
             this.ResumeLayout(false);
 
         }

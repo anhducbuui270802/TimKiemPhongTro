@@ -76,6 +76,12 @@
     <Compile Include="components\ChuNhaSDT.Designer.cs">
       <DependentUpon>ChuNhaSDT.cs</DependentUpon>
     </Compile>
+    <Compile Include="components\DanhSachTinDang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\DanhSachTinDang.Designer.cs">
+      <DependentUpon>DanhSachTinDang.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\NoiDungTin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="components\ChuNhaSDT.resx">
       <DependentUpon>ChuNhaSDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\DanhSachTinDang.resx">
+      <DependentUpon>DanhSachTinDang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\NoiDungTin.resx">
       <DependentUpon>NoiDungTin.cs</DependentUpon>
@@ -192,6 +201,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\resource\icon\love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\logonhatro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\loved.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

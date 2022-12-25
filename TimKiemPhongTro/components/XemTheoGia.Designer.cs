@@ -57,6 +57,7 @@
             // lbDuoi1tr
             // 
             this.lbDuoi1tr.AutoSize = true;
+            this.lbDuoi1tr.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbDuoi1tr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDuoi1tr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lbDuoi1tr.Location = new System.Drawing.Point(21, 53);
@@ -66,11 +67,11 @@
             this.lbDuoi1tr.TabIndex = 1;
             this.lbDuoi1tr.Text = ">   Dưới 1 triệu";
             this.lbDuoi1tr.Click += new System.EventHandler(this.lbDuoi1tr_Click);
-            this.lbDuoi1tr.MouseHover += new System.EventHandler(this.lbDuoi1tr_MouseHover);
             // 
             // lb2_3
             // 
             this.lb2_3.AutoSize = true;
+            this.lb2_3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb2_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb2_3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb2_3.Location = new System.Drawing.Point(21, 93);
@@ -80,25 +81,25 @@
             this.lb2_3.TabIndex = 2;
             this.lb2_3.Text = ">   Từ 2 - 3 triệu";
             this.lb2_3.Click += new System.EventHandler(this.lb2_3_Click);
-            this.lb2_3.MouseHover += new System.EventHandler(this.lb2_3_MouseHover);
             // 
             // lb5_7
             // 
             this.lb5_7.AutoSize = true;
+            this.lb5_7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb5_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb5_7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.lb5_7.Location = new System.Drawing.Point(21, 141);
+            this.lb5_7.Location = new System.Drawing.Point(21, 136);
             this.lb5_7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 10);
             this.lb5_7.Name = "lb5_7";
             this.lb5_7.Size = new System.Drawing.Size(130, 20);
             this.lb5_7.TabIndex = 3;
             this.lb5_7.Text = ">   Từ 5 - 7 triệu";
             this.lb5_7.Click += new System.EventHandler(this.lb5_7_Click);
-            this.lb5_7.MouseHover += new System.EventHandler(this.lb5_7_MouseHover);
             // 
             // lb7_10
             // 
             this.lb7_10.AutoSize = true;
+            this.lb7_10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb7_10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb7_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb7_10.Location = new System.Drawing.Point(200, 136);
@@ -108,11 +109,11 @@
             this.lb7_10.TabIndex = 6;
             this.lb7_10.Text = ">   Từ 7 - 10 triệu";
             this.lb7_10.Click += new System.EventHandler(this.lb7_10_Click);
-            this.lb7_10.MouseHover += new System.EventHandler(this.lb7_10_MouseHover);
             // 
             // lb3_5
             // 
             this.lb3_5.AutoSize = true;
+            this.lb3_5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb3_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb3_5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb3_5.Location = new System.Drawing.Point(200, 93);
@@ -122,11 +123,11 @@
             this.lb3_5.TabIndex = 5;
             this.lb3_5.Text = ">   Từ 3 - 5 triệu";
             this.lb3_5.Click += new System.EventHandler(this.lb3_5_Click);
-            this.lb3_5.MouseHover += new System.EventHandler(this.lb3_5_MouseHover);
             // 
             // lb1_2
             // 
             this.lb1_2.AutoSize = true;
+            this.lb1_2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb1_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb1_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb1_2.Location = new System.Drawing.Point(200, 53);
@@ -136,11 +137,11 @@
             this.lb1_2.TabIndex = 4;
             this.lb1_2.Text = ">   Từ 1 - 2 triệu";
             this.lb1_2.Click += new System.EventHandler(this.lb1_2_Click);
-            this.lb1_2.MouseHover += new System.EventHandler(this.lb1_2_MouseHover);
             // 
             // lb10_15
             // 
             this.lb10_15.AutoSize = true;
+            this.lb10_15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lb10_15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb10_15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lb10_15.Location = new System.Drawing.Point(21, 179);
@@ -150,11 +151,11 @@
             this.lb10_15.TabIndex = 7;
             this.lb10_15.Text = ">   Từ 10 - 15 triệu";
             this.lb10_15.Click += new System.EventHandler(this.lb10_15_Click);
-            this.lb10_15.MouseHover += new System.EventHandler(this.lb10_15_MouseHover);
             // 
             // lbTren15
             // 
             this.lbTren15.AutoSize = true;
+            this.lbTren15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbTren15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTren15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
             this.lbTren15.Location = new System.Drawing.Point(200, 179);
@@ -164,7 +165,6 @@
             this.lbTren15.TabIndex = 8;
             this.lbTren15.Text = ">   Trên 15 triệu";
             this.lbTren15.Click += new System.EventHandler(this.lbTren15_Click);
-            this.lbTren15.MouseHover += new System.EventHandler(this.lbTren15_MouseHover);
             // 
             // panel1
             // 
@@ -203,6 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

@@ -83,9 +83,29 @@ namespace TimKiemPhongTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logonhatro {
+            get {
+                object obj = ResourceManager.GetObject("logonhatro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap love {
             get {
                 object obj = ResourceManager.GetObject("love", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loved {
+            get {
+                object obj = ResourceManager.GetObject("loved", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

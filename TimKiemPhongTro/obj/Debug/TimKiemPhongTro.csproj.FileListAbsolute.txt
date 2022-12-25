@@ -16,3 +16,4 @@ D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.com
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.DangTinMoi.resources
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.TrangChu.resources
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.NoiDungTin.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.DanhSachTinDang.resources
