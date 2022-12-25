@@ -72,13 +72,11 @@
             // 
             // lbDiaChi
             // 
-            this.lbDiaChi.AutoSize = true;
             this.lbDiaChi.Dock = System.Windows.Forms.DockStyle.Right;
             this.lbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.Location = new System.Drawing.Point(285, 0);
+            this.lbDiaChi.Location = new System.Drawing.Point(181, 0);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.lbDiaChi.Size = new System.Drawing.Size(139, 20);
+            this.lbDiaChi.Size = new System.Drawing.Size(243, 28);
             this.lbDiaChi.TabIndex = 2;
             this.lbDiaChi.Text = "Quận 1, tp.HCM";
             // 
@@ -148,6 +146,7 @@
             this.btnZalo.Text = "ZALO\r\n";
             this.btnZalo.TextColor = System.Drawing.Color.MediumSlateBlue;
             this.btnZalo.UseVisualStyleBackColor = false;
+            this.btnZalo.Click += new System.EventHandler(this.btnZalo_Click);
             this.btnZalo.MouseLeave += new System.EventHandler(this.btnZalo_MouseLeave);
             this.btnZalo.MouseHover += new System.EventHandler(this.btnZalo_MouseHover);
             // 
@@ -158,6 +157,7 @@
             this.btnsdt.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnsdt.BorderRadius = 10;
             this.btnsdt.BorderSize = 0;
+            this.btnsdt.Enabled = false;
             this.btnsdt.FlatAppearance.BorderSize = 0;
             this.btnsdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

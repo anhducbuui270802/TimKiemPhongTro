@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnMoiNhat = new CustomButton.VBButton();
             this.btnMacDinh = new CustomButton.VBButton();
             this.SuspendLayout();
             // 
-            // label1
+            // lbTitle
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(730, 38);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Danh sách tin đăng";
+            this.lbTitle.BackColor = System.Drawing.Color.White;
+            this.lbTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
+            this.lbTitle.Location = new System.Drawing.Point(0, 0);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(730, 38);
+            this.lbTitle.TabIndex = 2;
+            this.lbTitle.Text = "Danh sách tin đăng";
             // 
             // label2
             // 
@@ -108,7 +108,7 @@
             this.Controls.Add(this.btnMoiNhat);
             this.Controls.Add(this.btnMacDinh);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbTitle);
             this.Name = "DanhSachTinDang";
             this.Size = new System.Drawing.Size(757, 293);
             this.ResumeLayout(false);
@@ -118,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label label2;
         private CustomButton.VBButton btnMacDinh;
         private CustomButton.VBButton btnMoiNhat;

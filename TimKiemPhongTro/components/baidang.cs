@@ -108,14 +108,20 @@ namespace TimKiemPhongTro.components
 
         private void ptbAnh_Click(object sender, EventArgs e)
         {
-
+            var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+            trangchu.HienThiChiTiet();
         }
 
         private void lbTitle_Click(object sender, EventArgs e)
         {
-
+            var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+            trangchu.HienThiChiTiet();
         }
 
-
+        private void btnZalo_Click(object sender, EventArgs e)
+        {
+            ZALO zl = new ZALO();
+            zl.ShowDialog();
+        }
     }
 }

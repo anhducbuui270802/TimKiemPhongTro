@@ -64,17 +64,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ZALO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZALO.Designer.cs">
+      <DependentUpon>ZALO.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\baidang.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="components\baidang.Designer.cs">
       <DependentUpon>baidang.cs</DependentUpon>
     </Compile>
-    <Compile Include="components\ChuNhaSDT.cs">
+    <Compile Include="components\ChiTietBaiDang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="components\ChuNhaSDT.Designer.cs">
-      <DependentUpon>ChuNhaSDT.cs</DependentUpon>
+    <Compile Include="components\ChiTietBaiDang.Designer.cs">
+      <DependentUpon>ChiTietBaiDang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\ChuNha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\ChuNha.Designer.cs">
+      <DependentUpon>ChuNha.cs</DependentUpon>
     </Compile>
     <Compile Include="components\DanhSachTinDang.cs">
       <SubType>UserControl</SubType>
@@ -124,11 +136,17 @@
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="ZALO.resx">
+      <DependentUpon>ZALO.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\baidang.resx">
       <DependentUpon>baidang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="components\ChuNhaSDT.resx">
-      <DependentUpon>ChuNhaSDT.cs</DependentUpon>
+    <EmbeddedResource Include="components\ChiTietBaiDang.resx">
+      <DependentUpon>ChiTietBaiDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\ChuNha.resx">
+      <DependentUpon>ChuNha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\DanhSachTinDang.resx">
       <DependentUpon>DanhSachTinDang.cs</DependentUpon>
@@ -207,6 +225,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\resource\icon\loved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\area.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\registration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\qrzalo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

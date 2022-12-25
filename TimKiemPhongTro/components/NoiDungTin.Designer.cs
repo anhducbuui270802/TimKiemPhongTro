@@ -396,7 +396,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(79, 28);
             this.textBox4.TabIndex = 20;
-            this.textBox4.Text = "Đồng";
+            this.textBox4.Text = "Triệu đồng";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
@@ -406,9 +406,9 @@
             this.label16.ForeColor = System.Drawing.Color.Gray;
             this.label16.Location = new System.Drawing.Point(4, 1137);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(269, 15);
+            this.label16.Size = new System.Drawing.Size(159, 15);
             this.label16.TabIndex = 21;
-            this.label16.Text = "Nhập đầy đủ số, ví dụ 1 triệu thì nhập là 1000000";
+            this.label16.Text = "Ví dụ 2.500.000 thì nhập 2.5";
             // 
             // numericUpDown1
             // 
@@ -484,6 +484,7 @@
             this.btnHoanThanh.Text = "Hoàn thành";
             this.btnHoanThanh.TextColor = System.Drawing.Color.White;
             this.btnHoanThanh.UseVisualStyleBackColor = false;
+            this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
             // 
             // NoiDungTin
             // 

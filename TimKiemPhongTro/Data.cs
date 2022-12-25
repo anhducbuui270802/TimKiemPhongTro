@@ -87,6 +87,6 @@ namespace TimKiemPhongTro
 
     internal class Var
     {
-        public string user;
+        //public string user;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace TimKiemPhongTro.components
 {
-    partial class ChuNhaSDT
+    partial class ChuNha
     {
         /// <summary> 
         /// Required designer variable.

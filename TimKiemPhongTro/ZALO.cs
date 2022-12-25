@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TimKiemPhongTro.components
+namespace TimKiemPhongTro
 {
-    public partial class NoiDungTin : UserControl
+    public partial class ZALO : Form
     {
-        public NoiDungTin()
+        public ZALO()
         {
             InitializeComponent();
         }
-
-        private void btnHoanThanh_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

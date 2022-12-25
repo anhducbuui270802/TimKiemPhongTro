@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TimKiemPhongTro.components
 {
-    public partial class NoiDungTin : UserControl
+    public partial class ChiTietBaiDang : UserControl
     {
-        public NoiDungTin()
+        public ChiTietBaiDang()
         {
             InitializeComponent();
-        }
-
-        private void btnHoanThanh_Click(object sender, EventArgs e)
-        {
-
         }
 
     }
