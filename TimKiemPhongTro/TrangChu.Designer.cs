@@ -1,6 +1,6 @@
 ﻿namespace TimKiemPhongTro
 {
-    partial class Form1
+    partial class TrangChu
     {
         /// <summary>
         /// Required designer variable.

@@ -76,11 +76,42 @@
     <Compile Include="components\ChuNhaSDT.Designer.cs">
       <DependentUpon>ChuNhaSDT.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="components\NoiDungTin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\NoiDungTin.Designer.cs">
+      <DependentUpon>NoiDungTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\searchbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\searchbar.Designer.cs">
+      <DependentUpon>searchbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\XemTheoDienTich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\XemTheoDienTich.Designer.cs">
+      <DependentUpon>XemTheoDienTich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\XemTheoGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\XemTheoGia.Designer.cs">
+      <DependentUpon>XemTheoGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangTinMoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DangTinMoi.Designer.cs">
+      <DependentUpon>DangTinMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,8 +124,23 @@
     <EmbeddedResource Include="components\ChuNhaSDT.resx">
       <DependentUpon>ChuNhaSDT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="components\NoiDungTin.resx">
+      <DependentUpon>NoiDungTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\searchbar.resx">
+      <DependentUpon>searchbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\XemTheoDienTich.resx">
+      <DependentUpon>XemTheoDienTich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\XemTheoGia.resx">
+      <DependentUpon>XemTheoGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangTinMoi.resx">
+      <DependentUpon>DangTinMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

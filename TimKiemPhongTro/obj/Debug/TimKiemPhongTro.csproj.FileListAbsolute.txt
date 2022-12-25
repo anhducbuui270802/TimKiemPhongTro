@@ -8,4 +8,11 @@ D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csp
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.CoreCompileInputs.cache
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.exe
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.pdb
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.Form1.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.baidang.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.ChuNhaSDT.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.searchbar.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.XemTheoDienTich.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.XemTheoGia.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.DangTinMoi.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.TrangChu.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.NoiDungTin.resources
