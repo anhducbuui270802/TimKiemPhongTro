@@ -43,12 +43,11 @@
             this.iconYeuThich = new System.Windows.Forms.PictureBox();
             this.btnDangTinMoi = new CustomButton.VBButton();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.searchbar1 = new TimKiemPhongTro.components.searchbar();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.xemTheoGia1 = new TimKiemPhongTro.components.XemTheoGia();
-            this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
+            this.xemTheoGia1 = new TimKiemPhongTro.components.XemTheoGia();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.pnDangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconDangNhap)).BeginInit();
@@ -59,8 +58,8 @@
             this.pnYeuThich.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconYeuThich)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -257,33 +256,32 @@
             this.logo.TabStop = false;
             this.logo.Click += new System.EventHandler(this.logo_Click);
             // 
-            // flowLayoutPanel1
+            // panel5
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.searchbar1);
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(210, 80);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 861);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // searchbar1
-            // 
-            this.searchbar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(187)))), ((int)(((byte)(2)))));
-            this.searchbar1.Location = new System.Drawing.Point(3, 3);
-            this.searchbar1.Name = "searchbar1";
-            this.searchbar1.Size = new System.Drawing.Size(1138, 52);
-            this.searchbar1.TabIndex = 3;
+            this.panel5.BackColor = System.Drawing.Color.Lavender;
+            this.panel5.Location = new System.Drawing.Point(1023, 61);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(138, 174);
+            this.panel5.TabIndex = 3;
+            this.panel5.Visible = false;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.xemTheoGia1);
             this.panel3.Controls.Add(this.xemTheoDienTich1);
-            this.panel3.Location = new System.Drawing.Point(3, 61);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.MinimumSize = new System.Drawing.Size(375, 394);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(375, 441);
             this.panel3.TabIndex = 2;
+            // 
+            // xemTheoDienTich1
+            // 
+            this.xemTheoDienTich1.BackColor = System.Drawing.Color.White;
+            this.xemTheoDienTich1.Location = new System.Drawing.Point(0, 0);
+            this.xemTheoDienTich1.Name = "xemTheoDienTich1";
+            this.xemTheoDienTich1.Size = new System.Drawing.Size(355, 184);
+            this.xemTheoDienTich1.TabIndex = 0;
             // 
             // xemTheoGia1
             // 
@@ -295,22 +293,14 @@
             this.xemTheoGia1.Size = new System.Drawing.Size(355, 220);
             this.xemTheoGia1.TabIndex = 1;
             // 
-            // xemTheoDienTich1
+            // flowLayoutPanel1
             // 
-            this.xemTheoDienTich1.BackColor = System.Drawing.Color.White;
-            this.xemTheoDienTich1.Location = new System.Drawing.Point(0, 0);
-            this.xemTheoDienTich1.Name = "xemTheoDienTich1";
-            this.xemTheoDienTich1.Size = new System.Drawing.Size(355, 184);
-            this.xemTheoDienTich1.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Lavender;
-            this.panel5.Location = new System.Drawing.Point(1023, 61);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(138, 174);
-            this.panel5.TabIndex = 3;
-            this.panel5.Visible = false;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(210, 80);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 861);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // TrangChu
             // 
@@ -339,8 +329,8 @@
             this.pnYeuThich.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconYeuThich)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -353,12 +343,6 @@
         private System.Windows.Forms.Panel pnYeuThich;
         private System.Windows.Forms.PictureBox iconYeuThich;
         private System.Windows.Forms.Label lvYeuThich;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel3;
-        private components.XemTheoDienTich xemTheoDienTich1;
-        private components.searchbar searchbar1;
-        //private components.DanhSachTinDang danhSachTinDang1;
-        private components.XemTheoGia xemTheoGia1;
         private System.Windows.Forms.Panel pnQuanLy;
         private System.Windows.Forms.Label lbQuanLy;
         private System.Windows.Forms.PictureBox iconQuanLy;
@@ -369,6 +353,10 @@
         private System.Windows.Forms.Panel pnDangKy;
         private System.Windows.Forms.Label lbDangKy;
         private System.Windows.Forms.PictureBox icconDangKy;
+        private System.Windows.Forms.Panel panel3;
+        private components.XemTheoGia xemTheoGia1;
+        private components.XemTheoDienTich xemTheoDienTich1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 

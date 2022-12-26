@@ -22,9 +22,11 @@ namespace TimKiemPhongTro
 
         private void TrangChu_Load(object sender, EventArgs e)
         {
-            DanhSachTinDang ds = new DanhSachTinDang();
+            DanhSachTinDang dsTinDang = new DanhSachTinDang();
+            searchbar search = new searchbar();
             flowLayoutPanel1.Controls.Clear();
-            flowLayoutPanel1.Controls.Add(ds);
+            flowLayoutPanel1.Controls.Add(search);  
+            flowLayoutPanel1.Controls.Add(dsTinDang);
             flowLayoutPanel1.Controls.Add(panel3);
         }
 
@@ -36,22 +38,26 @@ namespace TimKiemPhongTro
 
         private void iconDangNhap_Click(object sender, EventArgs e)
         {
-
+            DangNhap dn = new DangNhap();
+            dn.ShowDialog();
         }
 
         private void lbDangNhap_Click(object sender, EventArgs e)
         {
-
+            DangNhap dn = new DangNhap();
+            dn.ShowDialog();
         }
 
         private void icconDangKy_Click(object sender, EventArgs e)
         {
-
+            DangKy dk = new DangKy();
+            dk.ShowDialog();
         }
 
         private void lbDangKy_Click(object sender, EventArgs e)
         {
-
+            DangKy dk = new DangKy();
+            dk.ShowDialog();
         }
 
         private void iconYeuThich_Click(object sender, EventArgs e)
