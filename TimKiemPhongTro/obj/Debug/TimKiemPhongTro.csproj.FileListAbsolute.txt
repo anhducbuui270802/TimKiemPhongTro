@@ -21,10 +21,3 @@ D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.com
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.ZALO.resources
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.DangKy.resources
 D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.DangNhap.resources
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\components\YeuThich_LichSu.g.cs
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro_MarkupCompile.cache
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro_MarkupCompile.lref
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\components\YeuThich_LichSu.baml
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.g.resources
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.LichSu_YeuThich.resources
-D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.DSLichSu_YeuThich.resources
