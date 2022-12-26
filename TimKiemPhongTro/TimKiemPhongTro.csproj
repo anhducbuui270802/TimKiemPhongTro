@@ -68,6 +68,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="components\DSLichSuYeuThich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\DSLichSuYeuThich.Designer.cs">
+      <DependentUpon>DSLichSuYeuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\YeuThichLichSuItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\YeuThichLichSuItem.Designer.cs">
+      <DependentUpon>YeuThichLichSuItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +164,12 @@
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="components\DSLichSuYeuThich.resx">
+      <DependentUpon>DSLichSuYeuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\YeuThichLichSuItem.resx">
+      <DependentUpon>YeuThichLichSuItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +289,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\resource\icon\image-gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

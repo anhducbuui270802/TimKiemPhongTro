@@ -22,7 +22,6 @@ namespace TimKiemPhongTro
         private void DangTinMoi_Load(object sender, EventArgs e)
         {
             NoiDungTin nd = new NoiDungTin();
-           // nd.Dock = DockStyle.Top;
             flowLayoutPanel1.Controls.Add(nd);
         }
     }

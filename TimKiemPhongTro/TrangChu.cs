@@ -63,11 +63,15 @@ namespace TimKiemPhongTro
         private void iconYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich();
+            flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void lvYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich();
+            flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void iconQuanLy_Click(object sender, EventArgs e)
