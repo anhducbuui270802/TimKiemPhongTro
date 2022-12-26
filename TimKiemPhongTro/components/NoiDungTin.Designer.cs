@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,10 +63,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHoanThanh = new CustomButton.VBButton();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -249,16 +246,16 @@
             this.panel3.Controls.Add(this.label9);
             this.panel3.Location = new System.Drawing.Point(3, 374);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(772, 479);
+            this.panel3.Size = new System.Drawing.Size(772, 502);
             this.panel3.TabIndex = 4;
             // 
             // rbNoiDungMoTa
             // 
             this.rbNoiDungMoTa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rbNoiDungMoTa.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbNoiDungMoTa.Location = new System.Drawing.Point(3, 248);
+            this.rbNoiDungMoTa.Location = new System.Drawing.Point(3, 291);
             this.rbNoiDungMoTa.Name = "rbNoiDungMoTa";
-            this.rbNoiDungMoTa.Size = new System.Drawing.Size(747, 198);
+            this.rbNoiDungMoTa.Size = new System.Drawing.Size(747, 208);
             this.rbNoiDungMoTa.TabIndex = 14;
             this.rbNoiDungMoTa.Text = "";
             // 
@@ -267,7 +264,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.label12.Location = new System.Drawing.Point(5, 224);
+            this.label12.Location = new System.Drawing.Point(6, 267);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(118, 21);
             this.label12.TabIndex = 13;
@@ -275,10 +272,12 @@
             // 
             // txtTieuDe
             // 
+            this.txtTieuDe.AllowDrop = true;
             this.txtTieuDe.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTieuDe.Location = new System.Drawing.Point(3, 158);
+            this.txtTieuDe.Multiline = true;
             this.txtTieuDe.Name = "txtTieuDe";
-            this.txtTieuDe.Size = new System.Drawing.Size(154, 28);
+            this.txtTieuDe.Size = new System.Drawing.Size(747, 63);
             this.txtTieuDe.TabIndex = 12;
             // 
             // label11
@@ -334,7 +333,7 @@
             // txtThongTinLienHe
             // 
             this.txtThongTinLienHe.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtThongTinLienHe.Location = new System.Drawing.Point(3, 912);
+            this.txtThongTinLienHe.Location = new System.Drawing.Point(3, 929);
             this.txtThongTinLienHe.Name = "txtThongTinLienHe";
             this.txtThongTinLienHe.Size = new System.Drawing.Size(444, 28);
             this.txtThongTinLienHe.TabIndex = 13;
@@ -344,7 +343,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.label13.Location = new System.Drawing.Point(6, 888);
+            this.label13.Location = new System.Drawing.Point(9, 905);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(128, 21);
             this.label13.TabIndex = 15;
@@ -355,7 +354,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.label14.Location = new System.Drawing.Point(5, 988);
+            this.label14.Location = new System.Drawing.Point(8, 1005);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(103, 21);
             this.label14.TabIndex = 17;
@@ -364,7 +363,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(3, 1012);
+            this.textBox2.Location = new System.Drawing.Point(3, 1029);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(444, 28);
             this.textBox2.TabIndex = 16;
@@ -374,7 +373,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.label15.Location = new System.Drawing.Point(3, 1082);
+            this.label15.Location = new System.Drawing.Point(6, 1099);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(99, 21);
             this.label15.TabIndex = 19;
@@ -383,7 +382,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(3, 1106);
+            this.textBox3.Location = new System.Drawing.Point(3, 1123);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(376, 28);
             this.textBox3.TabIndex = 18;
@@ -392,7 +391,7 @@
             // 
             this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
             this.textBox4.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(368, 1106);
+            this.textBox4.Location = new System.Drawing.Point(371, 1123);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(79, 28);
             this.textBox4.TabIndex = 20;
@@ -404,7 +403,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Calibri Light", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Gray;
-            this.label16.Location = new System.Drawing.Point(4, 1137);
+            this.label16.Location = new System.Drawing.Point(7, 1154);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(159, 15);
             this.label16.TabIndex = 21;
@@ -450,12 +449,6 @@
             this.label18.Size = new System.Drawing.Size(73, 21);
             this.label18.TabIndex = 25;
             this.label18.Text = "Hình ảnh";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // pictureBox1
             // 
@@ -559,9 +552,7 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private CustomButton.VBButton btnHoanThanh;
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }

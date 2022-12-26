@@ -55,7 +55,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.Red;
             this.lbTitle.Location = new System.Drawing.Point(289, 5);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(438, 53);
+            this.lbTitle.Size = new System.Drawing.Size(437, 53);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "CHO THUÊ PHÒNG TRỌ CHÍNH CHỦ, AN NINH, QUẬN 1";
             this.lbTitle.Click += new System.EventHandler(this.lbTitle_Click);
@@ -106,7 +106,7 @@
             // 
             // rtbMoTa
             // 
-            this.rtbMoTa.BackColor = System.Drawing.Color.PapayaWhip;
+            this.rtbMoTa.BackColor = System.Drawing.Color.Snow;
             this.rtbMoTa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbMoTa.Location = new System.Drawing.Point(297, 92);
             this.rtbMoTa.Name = "rtbMoTa";
@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PapayaWhip;
+            this.BackColor = System.Drawing.Color.Snow;
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.rtbMoTa);

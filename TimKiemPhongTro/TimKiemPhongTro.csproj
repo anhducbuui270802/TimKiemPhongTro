@@ -51,8 +51,11 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,8 +65,24 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="components\DSLichSu-YeuThich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\DSLichSu-YeuThich.Designer.cs">
+      <DependentUpon>DSLichSu-YeuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\LichSu_YeuThich.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\LichSu_YeuThich.Designer.cs">
+      <DependentUpon>LichSu_YeuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\YeuThich_LichSu.xaml.cs">
+      <DependentUpon>YeuThich_LichSu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +167,12 @@
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="components\DSLichSu-YeuThich.resx">
+      <DependentUpon>DSLichSu-YeuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\LichSu_YeuThich.resx">
+      <DependentUpon>LichSu_YeuThich.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,6 +292,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\resource\icon\image-gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="components\YeuThich_LichSu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

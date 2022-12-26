@@ -25,7 +25,7 @@ namespace TimKiemPhongTro
             DanhSachTinDang dsTinDang = new DanhSachTinDang();
             searchbar search = new searchbar();
             flowLayoutPanel1.Controls.Clear();
-            flowLayoutPanel1.Controls.Add(search);  
+            flowLayoutPanel1.Controls.Add(search);
             flowLayoutPanel1.Controls.Add(dsTinDang);
             flowLayoutPanel1.Controls.Add(panel3);
         }
@@ -62,12 +62,16 @@ namespace TimKiemPhongTro
 
         private void iconYeuThich_Click(object sender, EventArgs e)
         {
-
+            flowLayoutPanel1.Controls.Clear();
+            DSLichSu_YeuThich ds = new DSLichSu_YeuThich();
+            flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void lvYeuThich_Click(object sender, EventArgs e)
         {
-
+            flowLayoutPanel1.Controls.Clear();
+            DSLichSu_YeuThich ds = new DSLichSu_YeuThich();
+            flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void iconQuanLy_Click(object sender, EventArgs e)
@@ -88,14 +92,14 @@ namespace TimKiemPhongTro
             ChiTietBaiDang chitiet = new ChiTietBaiDang();
             flowLayoutPanel1.Controls.Add(chitiet);
             flowLayoutPanel1.Controls.Add(chunha);
-            
+
         }
 
         private void logo_Click(object sender, EventArgs e)
         {
-            TrangChu_Load(sender,e);
+            TrangChu_Load(sender, e);
         }
 
-     
+
     }
 }

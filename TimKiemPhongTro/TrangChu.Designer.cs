@@ -45,8 +45,8 @@
             this.logo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
             this.xemTheoGia1 = new TimKiemPhongTro.components.XemTheoGia();
+            this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.pnDangNhap.SuspendLayout();
@@ -196,7 +196,6 @@
             this.pnYeuThich.Name = "pnYeuThich";
             this.pnYeuThich.Size = new System.Drawing.Size(136, 35);
             this.pnYeuThich.TabIndex = 1;
-            this.pnYeuThich.Visible = false;
             // 
             // lvYeuThich
             // 
@@ -275,14 +274,6 @@
             this.panel3.Size = new System.Drawing.Size(375, 441);
             this.panel3.TabIndex = 2;
             // 
-            // xemTheoDienTich1
-            // 
-            this.xemTheoDienTich1.BackColor = System.Drawing.Color.White;
-            this.xemTheoDienTich1.Location = new System.Drawing.Point(0, 0);
-            this.xemTheoDienTich1.Name = "xemTheoDienTich1";
-            this.xemTheoDienTich1.Size = new System.Drawing.Size(355, 184);
-            this.xemTheoDienTich1.TabIndex = 0;
-            // 
             // xemTheoGia1
             // 
             this.xemTheoGia1.BackColor = System.Drawing.Color.White;
@@ -292,6 +283,14 @@
             this.xemTheoGia1.Name = "xemTheoGia1";
             this.xemTheoGia1.Size = new System.Drawing.Size(355, 220);
             this.xemTheoGia1.TabIndex = 1;
+            // 
+            // xemTheoDienTich1
+            // 
+            this.xemTheoDienTich1.BackColor = System.Drawing.Color.White;
+            this.xemTheoDienTich1.Location = new System.Drawing.Point(0, 0);
+            this.xemTheoDienTich1.Name = "xemTheoDienTich1";
+            this.xemTheoDienTich1.Size = new System.Drawing.Size(355, 184);
+            this.xemTheoDienTich1.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
