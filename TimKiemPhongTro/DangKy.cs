@@ -21,5 +21,40 @@ namespace TimKiemPhongTro
         {
 
         }
+
+        private void ptbAvt_Click(object sender, EventArgs e)
+        {
+            string path;
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "png files (*.png)|*png|jpg files (*.jpg)|*jpg|All files (*.*)|*.*";
+            open.Multiselect = true;
+            open.InitialDirectory = "D:\\UIT\\Nam3_Ky1\\c#\\TimKiemPhongTro\\TimKiemPhongTro\\bin\\Debug\\resource\\icon";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                path = open.FileName;
+                ptbAvt.Image = Image.FromFile(path);
+                //Console.WriteLine(path);
+            }
+        }
+
+        private void ptbZalo_Click(object sender, EventArgs e)
+        {
+            string path;
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "png files (*.png)|*png|jpg files (*.jpg)|*jpg|All files (*.*)|*.*";
+            open.Multiselect = true;
+            open.InitialDirectory = "D:\\UIT\\Nam3_Ky1\\c#\\TimKiemPhongTro\\TimKiemPhongTro\\bin\\Debug\\resource\\icon";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                path = open.FileName;
+                ptbZalo.Image = Image.FromFile(path);
+                //Console.WriteLine(path);
+            }
+        }
+
+        private void btnTaoTaiKhoan_Click(object sender, EventArgs e)
+        {
+            //sql.RunSQL("insert into NGUOIDUNG values (" + function.getId("ND") + ",N'" + txtHoTen.Text + "'," + ")");
+        }
     }
 }

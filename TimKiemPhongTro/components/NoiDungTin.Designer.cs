@@ -456,8 +456,10 @@
             this.pictureBox1.Location = new System.Drawing.Point(3, 1298);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(771, 255);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnHoanThanh
             // 
@@ -504,6 +506,7 @@
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Name = "NoiDungTin";
             this.Size = new System.Drawing.Size(780, 1652);
+            this.Load += new System.EventHandler(this.NoiDungTin_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);

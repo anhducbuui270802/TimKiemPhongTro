@@ -16,7 +16,7 @@ namespace TimKiemPhongTro
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DangTinMoi());
+            Application.Run(new DangKy());
         }
     }
 }

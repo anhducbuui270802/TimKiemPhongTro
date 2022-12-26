@@ -36,9 +36,9 @@
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.rdoTimKiem = new System.Windows.Forms.RadioButton();
             this.rdoChinhChu = new System.Windows.Forms.RadioButton();
+            this.rdoTimKiem = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtMK = new System.Windows.Forms.TextBox();
@@ -130,16 +130,18 @@
             this.panel1.Size = new System.Drawing.Size(521, 75);
             this.panel1.TabIndex = 9;
             // 
-            // label6
+            // rdoChinhChu
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 25);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Loại tài khoản";
+            this.rdoChinhChu.AutoSize = true;
+            this.rdoChinhChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoChinhChu.ForeColor = System.Drawing.Color.DimGray;
+            this.rdoChinhChu.Location = new System.Drawing.Point(148, 34);
+            this.rdoChinhChu.Name = "rdoChinhChu";
+            this.rdoChinhChu.Size = new System.Drawing.Size(169, 24);
+            this.rdoChinhChu.TabIndex = 12;
+            this.rdoChinhChu.TabStop = true;
+            this.rdoChinhChu.Text = "Chính chủ đăng tin";
+            this.rdoChinhChu.UseVisualStyleBackColor = true;
             // 
             // rdoTimKiem
             // 
@@ -154,18 +156,16 @@
             this.rdoTimKiem.Text = "Tìm kiếm";
             this.rdoTimKiem.UseVisualStyleBackColor = true;
             // 
-            // rdoChinhChu
+            // label6
             // 
-            this.rdoChinhChu.AutoSize = true;
-            this.rdoChinhChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoChinhChu.ForeColor = System.Drawing.Color.DimGray;
-            this.rdoChinhChu.Location = new System.Drawing.Point(148, 34);
-            this.rdoChinhChu.Name = "rdoChinhChu";
-            this.rdoChinhChu.Size = new System.Drawing.Size(169, 24);
-            this.rdoChinhChu.TabIndex = 12;
-            this.rdoChinhChu.TabStop = true;
-            this.rdoChinhChu.Text = "Chính chủ đăng tin";
-            this.rdoChinhChu.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.DimGray;
+            this.label6.Location = new System.Drawing.Point(0, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 25);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Loại tài khoản";
             // 
             // label7
             // 
@@ -247,6 +247,7 @@
             this.btnTaoTaiKhoan.Text = "Tạo tài khoản";
             this.btnTaoTaiKhoan.TextColor = System.Drawing.Color.White;
             this.btnTaoTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaoTaiKhoan.Click += new System.EventHandler(this.btnTaoTaiKhoan_Click);
             // 
             // ptbZalo
             // 
@@ -257,6 +258,7 @@
             this.ptbZalo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbZalo.TabIndex = 13;
             this.ptbZalo.TabStop = false;
+            this.ptbZalo.Click += new System.EventHandler(this.ptbZalo_Click);
             // 
             // ptbAvt
             // 
@@ -267,6 +269,7 @@
             this.ptbAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbAvt.TabIndex = 12;
             this.ptbAvt.TabStop = false;
+            this.ptbAvt.Click += new System.EventHandler(this.ptbAvt_Click);
             // 
             // DangKy
             // 
