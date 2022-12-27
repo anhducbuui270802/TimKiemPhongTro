@@ -94,36 +94,63 @@ namespace TimKiemPhongTro
 
     internal class function
     {
+        //Hàm tạo khóa có dạng: TientoNgaythangnam_giophutgiay
+        public static string getId(string tiento)
+        {
+            string key = tiento;
+            string[] partsDay;
+            partsDay = DateTime.Now.ToShortDateString().Split('/');
+            //Ví dụ 07/08/2009
+            string d = String.Format("{0}{1}{2}", partsDay[0], partsDay[1], partsDay[2]);
+            key = key + d;
+            string[] partsTime;
+            partsTime = DateTime.Now.ToLongTimeString().Split(':');
+            //Ví dụ 7:08:03 PM hoặc 7:08:03 AM\
+            if (partsTime[2].Substring(3, 2) == "CH")
+                partsTime[0] = ConvertTimeTo24(partsTime[0]);
+            if (partsTime[2].Substring(3, 2) == "SA")
+                if (partsTime[0].Length == 1)
+                    partsTime[0] = "0" + partsTime[0];
+            //Xóa ký tự trắng và PM hoặc AM
+            partsTime[2] = partsTime[2].Remove(2, 3);
+            string t;
+            t = String.Format("{0}{1}{2}", partsTime[0], partsTime[1], partsTime[2]);
+            key = key + t;
+
+            return key;
+        }
+
+        //Chuyển đổi từ PM sang dạng 24h
         public static string ConvertTimeTo24(string hour)
         {
             string h = "";
             switch (hour)
             {
-                case "1":
+                case "01":
                     h = "13";
                     break;
-                case "2":
+                case "02":
                     h = "14";
                     break;
-                case "3":
+                case "03":
                     h = "15";
                     break;
-                case "4":
+                case "04":
                     h = "16";
                     break;
-                case "5":
+                case "05":
                     h = "17";
                     break;
-                case "6":
+                case "06":
                     h = "18";
                     break;
-                case "7":
+                case "07":
                     h = "19";
                     break;
-                case "8":
+                case "08":
                     h = "20";
                     break;
-                case "9":
+                case "09":
                     h = "21";
                     break;
                 case "10":
@@ -137,30 +164,6 @@ namespace TimKiemPhongTro
                     break;
             }
             return h;
-        }
-
-        public static string getId(string tiento)
-        {
-            string key = tiento;
-            string[] partsDay;
-            partsDay = DateTime.Now.ToShortDateString().Split('/');
-            //Ví dụ 07/08/2009
-            string d = String.Format("{0}{1}{2}", partsDay[0], partsDay[1], partsDay[2]);
-            key = key + d;
-            string[] partsTime;
-            partsTime = DateTime.Now.ToLongTimeString().Split(':');
-            //Ví dụ 7:08:03 PM hoặc 7:08:03 AM
-            if (partsTime[2].Substring(3, 2) == "PM")
-                partsTime[0] = ConvertTimeTo24(partsTime[0]);
-            if (partsTime[2].Substring(3, 2) == "AM")
-                if (partsTime[0].Length == 1)
-                    partsTime[0] = "0" + partsTime[0];
-            //Xóa ký tự trắng và PM hoặc AM
-            partsTime[2] = partsTime[2].Remove(2, 3);
-            string t;
-            t = String.Format("{0}{1}{2}", partsTime[0], partsTime[1], partsTime[2]);
-            key = key + t;
-            return key; 
         }
     }
 }

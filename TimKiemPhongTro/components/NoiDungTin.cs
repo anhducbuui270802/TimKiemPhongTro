@@ -25,9 +25,6 @@ namespace TimKiemPhongTro.components
         {
             //NoiDungTin_Load(sender, e); 
             //sql.RunSQL("insert into BAIDANG values (" + Var.iduser + "," + ")");
-
-            
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,7 +38,7 @@ namespace TimKiemPhongTro.components
             {
                 path = open.FileName;
                 pictureBox1.Image = Image.FromFile(path);
-                //Console.WriteLine(path);
+                Console.WriteLine(path);
             }
         }
     }

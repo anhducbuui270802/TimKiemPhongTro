@@ -16,6 +16,7 @@ namespace TimKiemPhongTro
         public TrangChu()
         {
             InitializeComponent();
+            sql.Connect();
             DanhSachTinDang ds = new DanhSachTinDang();
             flowLayoutPanel1.Controls.Add(ds);
         }

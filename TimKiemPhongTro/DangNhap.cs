@@ -16,5 +16,11 @@ namespace TimKiemPhongTro
         {
             InitializeComponent();
         }
+
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            string temp = "";
+            temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
+        }
     }
 }

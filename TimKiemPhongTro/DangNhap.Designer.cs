@@ -33,7 +33,7 @@
             this.txtMK = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.vbButton1 = new CustomButton.VBButton();
+            this.btnDangNhap = new CustomButton.VBButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,31 +86,32 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mật khẩu";
             // 
-            // vbButton1
+            // btnDangNhap
             // 
-            this.vbButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.vbButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.vbButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.vbButton1.BorderRadius = 10;
-            this.vbButton1.BorderSize = 0;
-            this.vbButton1.FlatAppearance.BorderSize = 0;
-            this.vbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vbButton1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vbButton1.ForeColor = System.Drawing.Color.White;
-            this.vbButton1.Location = new System.Drawing.Point(131, 378);
-            this.vbButton1.Name = "vbButton1";
-            this.vbButton1.Size = new System.Drawing.Size(150, 40);
-            this.vbButton1.TabIndex = 5;
-            this.vbButton1.Text = "Đăng nhập";
-            this.vbButton1.TextColor = System.Drawing.Color.White;
-            this.vbButton1.UseVisualStyleBackColor = false;
+            this.btnDangNhap.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDangNhap.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDangNhap.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDangNhap.BorderRadius = 10;
+            this.btnDangNhap.BorderSize = 0;
+            this.btnDangNhap.FlatAppearance.BorderSize = 0;
+            this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangNhap.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDangNhap.Location = new System.Drawing.Point(131, 378);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(150, 40);
+            this.btnDangNhap.TabIndex = 5;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.TextColor = System.Drawing.Color.White;
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 454);
-            this.Controls.Add(this.vbButton1);
+            this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMK);
@@ -133,6 +134,6 @@
         private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private CustomButton.VBButton vbButton1;
+        private CustomButton.VBButton btnDangNhap;
     }
 }
