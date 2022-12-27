@@ -63,6 +63,16 @@ namespace TimKiemPhongTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap danh_lam_thang_canh_viet_nam_5 {
+            get {
+                object obj = ResourceManager.GetObject("danh-lam-thang-canh-viet-nam-5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap defaultuser {
             get {
                 object obj = ResourceManager.GetObject("defaultuser", resourceCulture);
@@ -73,9 +83,89 @@ namespace TimKiemPhongTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hinh_anh_tphcm {
+            get {
+                object obj = ResourceManager.GetObject("hinh-anh-tphcm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_anh_tphcm1 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-anh-tphcm1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_add_100_white {
+            get {
+                object obj = ResourceManager.GetObject("icons8-add-100_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_favorite_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-favorite-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_user_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-male-user-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sign_up_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-sign-up-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("image-removebg-preview (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +186,36 @@ namespace TimKiemPhongTro.Properties {
         internal static System.Drawing.Bitmap phone_call {
             get {
                 object obj = ResourceManager.GetObject("phone-call", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thanh_pho_da_nang {
+            get {
+                object obj = ResourceManager.GetObject("thanh-pho-da-nang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thanh_pho_da_nang1 {
+            get {
+                object obj = ResourceManager.GetObject("thanh-pho-da-nang1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tphcm {
+            get {
+                object obj = ResourceManager.GetObject("tphcm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
