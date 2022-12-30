@@ -63,7 +63,7 @@ namespace TimKiemPhongTro
             temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
             if (temp == "")
             {
-                sql.RunSQL("insert into NGUOIDUNG values ('" + function.getId("ND") + "',N'" + txtHoTen.Text + "', N'" + txtTenDangNhap.Text + "','" + txtMK.Text + "','" + txtSDT.Text + "'," + loai.ToString() + ",'" + _avtpath + "','" + _zalopath + "')");
+                sql.RunSQL("insert into NGUOIDUNG values ('" + function.getId("ND") + "',N'" + txtHoTen.Text.Trim() + "', N'" + txtTenDangNhap.Text.Trim() + "','" + txtMK.Text.Trim() + "','" + txtSDT.Text.Trim() + "'," + loai.ToString() + ",N'" + _avtpath + "',N'" + _zalopath + "')");
                 System.Windows.MessageBox.Show("Tạo thành công");
             }
 

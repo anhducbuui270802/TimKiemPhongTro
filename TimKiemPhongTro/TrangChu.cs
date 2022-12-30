@@ -31,6 +31,23 @@ namespace TimKiemPhongTro
             flowLayoutPanel1.Controls.Add(panel3);
         }
 
+        public void SetVisibal(bool flag)
+        {
+            if(flag)
+            {
+                pnDangNhap.Visible = false;
+                pnYeuThich.Visible = true;
+                pnQuanLy.Visible = true;
+            }
+            else
+            {
+                pnDangNhap.Visible = true;
+                pnYeuThich.Visible = false;
+                pnQuanLy.Visible = false;
+            }
+
+        }
+
         private void btnDangTinMoi_Click(object sender, EventArgs e)
         {
             DangTinMoi frm = new DangTinMoi();
@@ -77,12 +94,18 @@ namespace TimKiemPhongTro
 
         private void iconQuanLy_Click(object sender, EventArgs e)
         {
-
+            if(panel5.Visible)
+                panel5.Visible = false;
+            else
+                panel5.Visible = true;
         }
 
         private void lbQuanLy_Click(object sender, EventArgs e)
         {
-
+            if (panel5.Visible)
+                panel5.Visible = false;
+            else
+                panel5.Visible = true;
         }
 
 

@@ -196,6 +196,7 @@
             this.pnYeuThich.Name = "pnYeuThich";
             this.pnYeuThich.Size = new System.Drawing.Size(136, 35);
             this.pnYeuThich.TabIndex = 1;
+            this.pnYeuThich.Visible = false;
             // 
             // lvYeuThich
             // 
@@ -296,9 +297,9 @@
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(210, 80);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(210, 76);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 861);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 865);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // TrangChu

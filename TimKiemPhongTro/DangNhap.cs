@@ -17,10 +17,52 @@ namespace TimKiemPhongTro
             InitializeComponent();
         }
 
+
+        private void txtTenDangNhap_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            string temp = "";
-            temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
+            string MK = "";
+            MK = sql.GetFieldValues("select MK from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
+            if (MK != "")
+            {
+                if (MK == txtMK.Text)
+                {
+                    DataTable dt = sql.GetDataToTable("select * from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
+                    foreach (DataRow dr in dt.Rows)
+                    {
+                        Var.user.ID = dr["IdNguoiDung"].ToString();
+                        Var.user.HoTen = dr["HoTen"].ToString();
+                        Var.user.Tendangnhap = dr["TenDangNhap"].ToString();
+                        Var.user.MK = dr["MK"].ToString();
+                        Var.user.SDT = dr["SDT"].ToString();
+                        Var.user.Loai = int.Parse(dr["Loai"].ToString());
+                        Var.user.AVT = Image.FromFile(dr["Avt"].ToString());
+                        Var.user.ZALO = Image.FromFile(dr["Zalo"].ToString());
+                    }
+
+                    DialogResult result = MessageBox.Show("Đăng nhập thành công!");
+                    if (result == DialogResult.OK)
+                    {
+                        var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+                        trangchu.SetVisibal(true);
+                        this.Close();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Sai mật khẩu");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản không tồn tại");
+            }
         }
+
+
     }
 }

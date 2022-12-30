@@ -54,12 +54,12 @@
             this.txtThongTinLienHe = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtGia = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numDientich = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -67,7 +67,7 @@
             this.btnHoanThanh = new CustomButton.VBButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDientich)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -293,6 +293,7 @@
             // 
             // cbLoaiBDS
             // 
+            this.cbLoaiBDS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbLoaiBDS.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLoaiBDS.FormattingEnabled = true;
             this.cbLoaiBDS.Items.AddRange(new object[] {
@@ -360,13 +361,13 @@
             this.label14.TabIndex = 17;
             this.label14.Text = "Số điện thoại";
             // 
-            // textBox2
+            // txtSDT
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(3, 1029);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(444, 28);
-            this.textBox2.TabIndex = 16;
+            this.txtSDT.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.Location = new System.Drawing.Point(3, 1029);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(444, 28);
+            this.txtSDT.TabIndex = 16;
             // 
             // label15
             // 
@@ -379,13 +380,13 @@
             this.label15.TabIndex = 19;
             this.label15.Text = "Giá cho thuê";
             // 
-            // textBox3
+            // txtGia
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(3, 1123);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(376, 28);
-            this.textBox3.TabIndex = 18;
+            this.txtGia.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGia.Location = new System.Drawing.Point(3, 1123);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(376, 28);
+            this.txtGia.TabIndex = 18;
             // 
             // textBox4
             // 
@@ -409,13 +410,18 @@
             this.label16.TabIndex = 21;
             this.label16.Text = "Ví dụ 2.500.000 thì nhập 2.5";
             // 
-            // numericUpDown1
+            // numDientich
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Calibri", 10.2F);
-            this.numericUpDown1.Location = new System.Drawing.Point(3, 1210);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(364, 28);
-            this.numericUpDown1.TabIndex = 22;
+            this.numDientich.Font = new System.Drawing.Font("Calibri", 10.2F);
+            this.numDientich.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.numDientich.Location = new System.Drawing.Point(3, 1210);
+            this.numDientich.Name = "numDientich";
+            this.numDientich.Size = new System.Drawing.Size(364, 28);
+            this.numDientich.TabIndex = 22;
             // 
             // label17
             // 
@@ -453,7 +459,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 1298);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 1298);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(771, 255);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -491,13 +497,13 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.numDientich);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtGia);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSDT);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtThongTinLienHe);
             this.Controls.Add(this.panel3);
@@ -511,7 +517,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDientich)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -546,12 +552,12 @@
         private System.Windows.Forms.TextBox txtThongTinLienHe;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numDientich;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label18;

@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using System.Drawing;
+using System.ComponentModel;
 
 namespace TimKiemPhongTro
 {
@@ -87,9 +89,69 @@ namespace TimKiemPhongTro
 
     }
 
+    public partial class User
+    {
+        private string _id;
+        private string _hoten;
+        private string _tendangnhap;
+        private string _mk;
+        private string _sdt;
+        private int _loai;
+        private Image _avt;
+        private Image _zalo;
+
+        public string ID
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public string HoTen
+        {
+            get { return _hoten; }
+            set { _hoten = value; }
+        }
+
+        public string Tendangnhap
+        {
+            get { return _tendangnhap; }
+            set { _tendangnhap = value; }
+        }
+
+        public string MK
+        {
+            get { return _mk; }
+            set { _mk = value; }
+        }
+
+        public string SDT
+        {
+            get { return _sdt; }
+            set { _sdt = value; }
+        }
+
+        public int Loai
+        {
+            get { return _loai; }
+            set { _loai = value; }
+        }
+
+        public Image AVT
+        {
+            get { return _avt; }
+            set { _avt = value; }
+        }
+
+        public Image ZALO
+        {
+            get { return _zalo; }
+            set { _zalo = value; }
+        }
+    }
+
     internal class Var
     {
-        public static string iduser;
+        public static User user = new User();
     }
 
     internal class function
