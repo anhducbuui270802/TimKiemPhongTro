@@ -19,42 +19,47 @@ namespace TimKiemPhongTro.components
 
         private void lb7_10_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 7 and GiaPhong  < 10");
+            
         }
 
         private void lb1_2_Click(object sender, EventArgs e)
         {
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 1 and GiaPhong  < 2");
 
         }
 
         private void lbDuoi1tr_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong < 1");
         }
 
         private void lb2_3_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 2 and GiaPhong  < 3");
         }
 
         private void lb3_5_Click(object sender, EventArgs e)
         {
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 3 and GiaPhong  < 5");
 
         }
 
         private void lb5_7_Click(object sender, EventArgs e)
         {
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 5 and GiaPhong  < 7");
 
         }
 
         private void lb10_15_Click(object sender, EventArgs e)
         {
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 10 and GiaPhong  < 15");
 
         }
 
         private void lbTren15_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG where GiaPhong > 15 ");
         }
 
         //private void lbDuoi1tr_MouseHover(object sender, EventArgs e)

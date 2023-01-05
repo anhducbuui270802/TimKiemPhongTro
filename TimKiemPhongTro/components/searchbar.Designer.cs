@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbLoaiBDS = new System.Windows.Forms.ComboBox();
+            this.cbTinh = new System.Windows.Forms.ComboBox();
+            this.cbGia = new System.Windows.Forms.ComboBox();
+            this.cbDienTich = new System.Windows.Forms.ComboBox();
             this.btnTimKiem = new CustomButton.VBButton();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cbLoaiBDS
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbLoaiBDS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLoaiBDS.ForeColor = System.Drawing.Color.DimGray;
+            this.cbLoaiBDS.FormattingEnabled = true;
+            this.cbLoaiBDS.Items.AddRange(new object[] {
             "Phòng trọ, nhà trọ",
             "Nhà thuê nguyên căn",
             "Cho thuê căn hộ",
@@ -48,33 +48,33 @@
             "Cho thuê căn hộ dịch vụ",
             "Tìm người ở ghép",
             "Cho thuê mặt bằng"});
-            this.comboBox1.Location = new System.Drawing.Point(16, 10);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 28);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.TabStop = false;
-            this.comboBox1.Text = "Chọn loại bất động sản";
+            this.cbLoaiBDS.Location = new System.Drawing.Point(16, 10);
+            this.cbLoaiBDS.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.cbLoaiBDS.Name = "cbLoaiBDS";
+            this.cbLoaiBDS.Size = new System.Drawing.Size(210, 28);
+            this.cbLoaiBDS.TabIndex = 0;
+            this.cbLoaiBDS.TabStop = false;
+            this.cbLoaiBDS.Text = "Chọn loại bất động sản";
             // 
-            // comboBox2
+            // cbTinh
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(239, 10);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 28);
-            this.comboBox2.TabIndex = 1;
-            this.comboBox2.TabStop = false;
-            this.comboBox2.Text = "Chọn tỉnh thành";
+            this.cbTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbTinh.ForeColor = System.Drawing.Color.DimGray;
+            this.cbTinh.FormattingEnabled = true;
+            this.cbTinh.Location = new System.Drawing.Point(239, 10);
+            this.cbTinh.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.cbTinh.Name = "cbTinh";
+            this.cbTinh.Size = new System.Drawing.Size(210, 28);
+            this.cbTinh.TabIndex = 1;
+            this.cbTinh.TabStop = false;
+            this.cbTinh.Text = "Chọn tỉnh thành";
             // 
-            // comboBox3
+            // cbGia
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbGia.ForeColor = System.Drawing.Color.DimGray;
+            this.cbGia.FormattingEnabled = true;
+            this.cbGia.Items.AddRange(new object[] {
             "Dưới 1 triệu đồng",
             "Từ 1 - 2 triệu",
             "Từ 2 - 3 triệu ",
@@ -83,32 +83,32 @@
             "Từ 7 - 10 triệu ",
             "Từ 10 - 15 triệu",
             "Trên 15 triệu"});
-            this.comboBox3.Location = new System.Drawing.Point(462, 10);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(210, 28);
-            this.comboBox3.TabIndex = 2;
-            this.comboBox3.TabStop = false;
-            this.comboBox3.Text = "Chọn giá";
+            this.cbGia.Location = new System.Drawing.Point(462, 10);
+            this.cbGia.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.cbGia.Name = "cbGia";
+            this.cbGia.Size = new System.Drawing.Size(210, 28);
+            this.cbGia.TabIndex = 2;
+            this.cbGia.TabStop = false;
+            this.cbGia.Text = "Chọn giá";
             // 
-            // comboBox4
+            // cbDienTich
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.ForeColor = System.Drawing.Color.DimGray;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cbDienTich.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDienTich.ForeColor = System.Drawing.Color.DimGray;
+            this.cbDienTich.FormattingEnabled = true;
+            this.cbDienTich.Items.AddRange(new object[] {
             "Dưới 20 m2",
             "Từ 20 - 30 m2",
             "Từ 30 - 50 m2",
             "Từ 50 - 70 m2",
             "Từ 70 - 90 m2",
             "Trên 90 m2"});
-            this.comboBox4.Location = new System.Drawing.Point(685, 10);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(210, 28);
-            this.comboBox4.TabIndex = 3;
-            this.comboBox4.TabStop = false;
-            this.comboBox4.Text = "Chọn diện tích";
+            this.cbDienTich.Location = new System.Drawing.Point(685, 10);
+            this.cbDienTich.Name = "cbDienTich";
+            this.cbDienTich.Size = new System.Drawing.Size(210, 28);
+            this.cbDienTich.TabIndex = 3;
+            this.cbDienTich.TabStop = false;
+            this.cbDienTich.Text = "Chọn diện tích";
             // 
             // btnTimKiem
             // 
@@ -128,6 +128,7 @@
             this.btnTimKiem.Text = "🔍Tìm kiếm";
             this.btnTimKiem.TextColor = System.Drawing.Color.White;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // searchbar
             // 
@@ -135,10 +136,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(187)))), ((int)(((byte)(2)))));
             this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbDienTich);
+            this.Controls.Add(this.cbGia);
+            this.Controls.Add(this.cbTinh);
+            this.Controls.Add(this.cbLoaiBDS);
             this.Name = "searchbar";
             this.Size = new System.Drawing.Size(1138, 52);
             this.ResumeLayout(false);
@@ -147,10 +148,10 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbLoaiBDS;
+        private System.Windows.Forms.ComboBox cbTinh;
+        private System.Windows.Forms.ComboBox cbGia;
+        private System.Windows.Forms.ComboBox cbDienTich;
         private CustomButton.VBButton btnTimKiem;
     }
 }

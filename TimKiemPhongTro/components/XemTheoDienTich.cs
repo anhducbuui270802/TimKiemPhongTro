@@ -19,32 +19,33 @@ namespace TimKiemPhongTro.components
 
         private void lbDuoi20m_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt =  sql.GetDataToTable("select * from BAIDANG where DienTich < 20");
         }
 
         private void lb20_30_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt =  sql.GetDataToTable("select * from BAIDANG where DienTich > 20 and DienTich < 30");
         }
 
         private void lb30_50_Click(object sender, EventArgs e)
         {
+            DanhSachTinDang.dt =  sql.GetDataToTable("select * from BAIDANG where DienTich > 30 and DienTich < 50");
 
         }
 
         private void lb50_70_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt =  sql.GetDataToTable("select * from BAIDANG where DienTich > 50 and DienTich < 70");
         }
 
         private void lb70_90_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt =  sql.GetDataToTable("select * from BAIDANG where DienTich > 70 and DienTich < 90");
         }
 
         private void lbTren90m_Click(object sender, EventArgs e)
         {
-
+            DanhSachTinDang.dt =  sql.GetDataToTable("select * from BAIDANG where DienTich > 90");
         }
 
         //private void lbDuoi20m_MouseHover(object sender, EventArgs e)

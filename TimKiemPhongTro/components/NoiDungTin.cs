@@ -35,7 +35,7 @@ namespace TimKiemPhongTro.components
             if (cbDuongPho.Text == "") MessageBox.Show("Bạn chưa nhập đường phố");
             if (cbLoaiBDS.Text == "") MessageBox.Show("Bạn chưa chọn loại bất động sản");
 
-            string sql_funtion =
+            string sql_statement =
                 $"""
                 insert into BAIDANG (IdBai, IdNguoiDang,ThoiGianDang, Tinh, Quan, Pho, SoNha, LoaiBDS, TieuDe, MoTa, GiaPhong, DienTich, HinhAnh) values  (
                 '{function.getId("BD")}', 
@@ -54,7 +54,7 @@ namespace TimKiemPhongTro.components
                 )
                 """;
           
-            sql.RunSQL(sql_funtion);
+            sql.RunSQL(sql_statement);
             MessageBox.Show("Đã thêm bài đăng");
 
         }

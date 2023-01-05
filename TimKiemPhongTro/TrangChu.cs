@@ -18,6 +18,7 @@ namespace TimKiemPhongTro
             InitializeComponent();
             sql.Connect();
             DanhSachTinDang ds = new DanhSachTinDang();
+            //DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG");
             flowLayoutPanel1.Controls.Add(ds);
         }
 
@@ -50,8 +51,12 @@ namespace TimKiemPhongTro
 
         private void btnDangTinMoi_Click(object sender, EventArgs e)
         {
-            DangTinMoi frm = new DangTinMoi();
-            frm.ShowDialog();
+            if (Var.user.ID != null)
+            {
+                DangTinMoi frm = new DangTinMoi();
+                frm.ShowDialog();
+            }
+            else MessageBox.Show("Vui lòng đăng nhập trước khi đăng tin mới");
         }
 
         private void iconDangNhap_Click(object sender, EventArgs e)
@@ -123,6 +128,7 @@ namespace TimKiemPhongTro
         {
             TrangChu_Load(sender, e);
         }
+
 
 
     }
