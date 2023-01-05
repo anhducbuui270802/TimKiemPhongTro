@@ -17,5 +17,18 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
+        public ChiTietBaiDang(baidang bd) : this ()
+        {
+            ptbHinhAnh.Image = bd.ImgPhong;
+            lbTitle.Text = bd.Title;
+            lbDiaChi.Text = bd.DiaChiChinhXac;
+            lbGiaPhong.Text = bd.GiaPhong + " triệu/tháng";  
+            lbDienTich.Text = bd.DienTich;
+            lbThoiGian.Text = bd.ThoiGian;
+            txtThongTinMoTa.Text = bd.MoTa;
+            txtNguoiDang.Text = bd.TenNguoiDung;
+            txtSDT.Text = bd.SDT;
+        }
+
     }
 }

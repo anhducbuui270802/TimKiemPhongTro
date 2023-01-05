@@ -37,13 +37,14 @@ namespace TimKiemPhongTro.components
 
             string sql_statement =
                 $"""
-                insert into BAIDANG (IdBai, IdNguoiDang,ThoiGianDang, Tinh, Quan, Pho, SoNha, LoaiBDS, TieuDe, MoTa, GiaPhong, DienTich, HinhAnh) values  (
+                insert into BAIDANG (IdBai, IdNguoiDang,ThoiGianDang, Tinh, Quan, Phuong, Pho, SoNha, LoaiBDS, TieuDe, MoTa, GiaPhong, DienTich, HinhAnh) values  (
                 '{function.getId("BD")}', 
                 '{Var.user.ID}',
                 '{DateTime.Now.ToString()}' ,
                 N'{cbTinh.Text}' ,
-                N'{cbDuongPho.Text}',
                 N'{cbQuan.Text}', 
+                N'{cbPhuong.Text}',
+                N'{cbDuongPho.Text}',
                 N'{txtSoNha.Text}',
                 N'{cbLoaiBDS.Text}',
                 N'{txtTieuDe.Text}',

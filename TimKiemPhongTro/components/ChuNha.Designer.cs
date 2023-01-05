@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lbTenNguoiDung = new System.Windows.Forms.Label();
-            this.vbButton1 = new CustomButton.VBButton();
+            this.btnSDT = new CustomButton.VBButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -59,29 +59,29 @@
             this.lbTenNguoiDung.Text = "anhducbui";
             this.lbTenNguoiDung.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // vbButton1
+            // btnSDT
             // 
-            this.vbButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
-            this.vbButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
-            this.vbButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
-            this.vbButton1.BorderRadius = 10;
-            this.vbButton1.BorderSize = 0;
-            this.vbButton1.FlatAppearance.BorderSize = 0;
-            this.vbButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.vbButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vbButton1.ForeColor = System.Drawing.Color.White;
-            this.vbButton1.Location = new System.Drawing.Point(0, 0);
-            this.vbButton1.Name = "vbButton1";
-            this.vbButton1.Size = new System.Drawing.Size(324, 40);
-            this.vbButton1.TabIndex = 2;
-            this.vbButton1.Text = "0384970459";
-            this.vbButton1.TextColor = System.Drawing.Color.White;
-            this.vbButton1.UseVisualStyleBackColor = false;
+            this.btnSDT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
+            this.btnSDT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
+            this.btnSDT.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
+            this.btnSDT.BorderRadius = 10;
+            this.btnSDT.BorderSize = 0;
+            this.btnSDT.FlatAppearance.BorderSize = 0;
+            this.btnSDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSDT.ForeColor = System.Drawing.Color.White;
+            this.btnSDT.Location = new System.Drawing.Point(0, 0);
+            this.btnSDT.Name = "btnSDT";
+            this.btnSDT.Size = new System.Drawing.Size(324, 40);
+            this.btnSDT.TabIndex = 2;
+            this.btnSDT.Text = "0384970459";
+            this.btnSDT.TextColor = System.Drawing.Color.White;
+            this.btnSDT.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.vbButton1);
+            this.panel1.Controls.Add(this.btnSDT);
             this.panel1.Location = new System.Drawing.Point(18, 196);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(324, 40);
@@ -190,7 +190,7 @@
             this.ptbUser.TabIndex = 0;
             this.ptbUser.TabStop = false;
             // 
-            // ChuNhaSDT
+            // ChuNha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -200,7 +200,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbTenNguoiDung);
             this.Controls.Add(this.ptbUser);
-            this.Name = "ChuNhaSDT";
+            this.Name = "ChuNha";
             this.Size = new System.Drawing.Size(355, 342);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -217,7 +217,7 @@
 
         private System.Windows.Forms.PictureBox ptbUser;
         private System.Windows.Forms.Label lbTenNguoiDung;
-        private CustomButton.VBButton vbButton1;
+        private CustomButton.VBButton btnSDT;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;

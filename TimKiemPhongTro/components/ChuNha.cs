@@ -17,6 +17,14 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
+        private string ID;
+        public ChuNha(baidang bd) : this()
+        {
+            ptbUser.Image = bd.ImgNguoiDung;
+            btnSDT.Text = bd.SDT;
+            ID = bd.IDNguoiDang;
+        }
+
         private void btnZalo_Click(object sender, EventArgs e)
         {
             ZALO zl = new ZALO();

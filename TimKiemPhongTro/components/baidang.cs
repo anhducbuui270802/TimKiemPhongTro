@@ -21,12 +21,22 @@ namespace TimKiemPhongTro.components
         private string _giaphong;
         private string _dientich;
         private string _diachi;
+        private string _diachichinhxac;
+        private string _thoigian;
         private string _tennguoidung;
         private string _mota;
         private string _sdt;
         private Image _img;
         private Image _imguser;
+        private string _iduser;
 
+
+        [Category("Custom Props")]
+        public string IDNguoiDang
+        {
+            get { return _iduser; }
+            set { _iduser = value; lbTitle.Text = value; }
+        }
 
         [Category("Custom Props")]
         public string Title
@@ -92,7 +102,19 @@ namespace TimKiemPhongTro.components
             set { _sdt = value; btnsdt.Text = value; }
         }
 
+        [Category("Custom Props")]
+        public string ThoiGian
+        {
+            get { return _thoigian; }
+            set { _thoigian = value; }
+        }
 
+        [Category("Custom Props")]
+        public string DiaChiChinhXac
+        {
+            get { return _diachichinhxac; }
+            set { _diachichinhxac = value; }
+        }
 
         private void btnZalo_MouseHover(object sender, EventArgs e)
         {
@@ -109,13 +131,13 @@ namespace TimKiemPhongTro.components
         private void ptbAnh_Click(object sender, EventArgs e)
         {
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-            trangchu.HienThiChiTiet();
+            trangchu.HienThiChiTiet(this);
         }
 
         private void lbTitle_Click(object sender, EventArgs e)
         {
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-            trangchu.HienThiChiTiet();
+            trangchu.HienThiChiTiet(this);
         }
 
         private void btnZalo_Click(object sender, EventArgs e)

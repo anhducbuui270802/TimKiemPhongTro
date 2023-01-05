@@ -114,11 +114,11 @@ namespace TimKiemPhongTro
         }
 
 
-        public void HienThiChiTiet()
+        public void HienThiChiTiet(baidang bd)
         {
             flowLayoutPanel1.Controls.Clear();
-            ChuNha chunha = new ChuNha();
-            ChiTietBaiDang chitiet = new ChiTietBaiDang();
+            ChuNha chunha = new ChuNha(bd);
+            ChiTietBaiDang chitiet = new ChiTietBaiDang(bd);
             flowLayoutPanel1.Controls.Add(chitiet);
             flowLayoutPanel1.Controls.Add(chunha);
 
