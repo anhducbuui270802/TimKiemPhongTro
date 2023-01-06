@@ -29,13 +29,22 @@ namespace TimKiemPhongTro.components
         private Image _img;
         private Image _imguser;
         private string _iduser;
+        private string _idbai;
 
+
+
+        [Category("Custom Props")]
+        public string IDBai
+        {
+            get { return _idbai; }
+            set { _idbai = value; }
+        }
 
         [Category("Custom Props")]
         public string IDNguoiDang
         {
             get { return _iduser; }
-            set { _iduser = value; lbTitle.Text = value; }
+            set { _iduser = value;}
         }
 
         [Category("Custom Props")]

@@ -17,6 +17,10 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
+        //public YeuThichLichSuItem(baidang bd) : this ()
+        //{
+        //    baidang = bd;
+        //}
 
         private string _time;
         private baidang _baidang;
@@ -28,12 +32,12 @@ namespace TimKiemPhongTro.components
             set { _time = value; lbThoiGian.Text = value; }
         }
 
-        [Category("Custom Props")]
-        public baidang Baidang
-        {
-            get { return _baidang; }
-            set { _baidang = value; baidang1 = value; }
-        }
+        //[Category("Custom Props")]
+        //public baidang BaiDang
+        //{
+        //    get { return _baidang; }
+        //    set { _baidang = value; baidang = value; }
+        //}
 
     }
 }

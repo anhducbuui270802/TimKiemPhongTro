@@ -30,7 +30,7 @@
         {
             this.lbThoiGian = new System.Windows.Forms.Label();
             this.ptbDelete = new System.Windows.Forms.PictureBox();
-            this.baidang1 = new TimKiemPhongTro.components.baidang();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptbDelete)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,32 +56,24 @@
             this.ptbDelete.TabIndex = 2;
             this.ptbDelete.TabStop = false;
             // 
-            // baidang1
+            // label1
             // 
-            this.baidang1.BackColor = System.Drawing.Color.Snow;
-            this.baidang1.DiaChi = null;
-            this.baidang1.DienTich = null;
-            this.baidang1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.baidang1.GiaPhong = null;
-            this.baidang1.ImgNguoiDung = null;
-            this.baidang1.ImgPhong = null;
-            this.baidang1.Location = new System.Drawing.Point(0, 0);
-            this.baidang1.MoTa = null;
-            this.baidang1.Name = "baidang1";
-            this.baidang1.SDT = null;
-            this.baidang1.Size = new System.Drawing.Size(730, 270);
-            this.baidang1.TabIndex = 0;
-            this.baidang1.TenNguoiDung = null;
-            this.baidang1.Title = null;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(736, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 40, 3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 16);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Lần xem gần nhất:";
             // 
             // YeuThichLichSuItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ptbDelete);
             this.Controls.Add(this.lbThoiGian);
-            this.Controls.Add(this.baidang1);
             this.Name = "YeuThichLichSuItem";
             this.Size = new System.Drawing.Size(896, 270);
             ((System.ComponentModel.ISupportInitialize)(this.ptbDelete)).EndInit();
@@ -91,9 +83,8 @@
         }
 
         #endregion
-
-        private baidang baidang1;
         private System.Windows.Forms.Label lbThoiGian;
         private System.Windows.Forms.PictureBox ptbDelete;
+        private System.Windows.Forms.Label label1;
     }
 }

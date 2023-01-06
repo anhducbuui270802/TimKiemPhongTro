@@ -17,12 +17,14 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
-        private string ID;
+        private string IdNguoiDang;
+        private string IdBai;
         public ChuNha(baidang bd) : this()
         {
             ptbUser.Image = bd.ImgNguoiDung;
             btnSDT.Text = bd.SDT;
-            ID = bd.IDNguoiDang;
+            IdNguoiDang = bd.IDNguoiDang;
+            IdBai = bd.IDBai;
         }
 
         private void btnZalo_Click(object sender, EventArgs e)
@@ -33,7 +35,22 @@ namespace TimKiemPhongTro.components
 
         private void btnYeuThich_Click(object sender, EventArgs e)
         {
-
+            if(Var.user.ID == null)
+            {
+                MessageBox.Show("ban chua dang nhap");
+            }
+            else
+            {
+                sql.RunSQL(
+                    $"""
+                    insert into YEUTHICH (IdBai, IdNguoiDung) values (
+                    '{IdBai}',
+                    '{Var.user.ID}'
+                    )
+                    """
+                    );
+            } 
+                
         }
 
         private void ptbZalo_Click(object sender, EventArgs e)

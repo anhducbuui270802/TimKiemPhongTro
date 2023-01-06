@@ -19,7 +19,7 @@ namespace TimKiemPhongTro.components
 
             InitializeComponent();
 
-            dt = sql.GetDataToTable("select * from BAIDANG");
+            dt = sql.GetDataToTable("select * from BAIDANG ");
             foreach (DataRow dr in dt.Rows)
             {
                 baidang bd = new baidang();
@@ -29,18 +29,17 @@ namespace TimKiemPhongTro.components
                 bd.DiaChi = dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
                 bd.MoTa = dr["MoTa"].ToString();
                 bd.ImgPhong = Image.FromFile(dr["HinhAnh"].ToString());
-                bd.TenNguoiDung = dr["IdNguoiDang"].ToString();
                 string id = dr["IdNguoiDang"].ToString();
                 bd.TenNguoiDung = sql.GetFieldValues("select HoTen from NGUOIDUNG where IdNguoiDung = '" + id + "'");
                 bd.ImgNguoiDung = Image.FromFile(sql.GetFieldValues("select Avt from NGUOIDUNG where IdNguoiDung = '" + id + "'"));
                 bd.SDT = sql.GetFieldValues("select SDT from NGUOIDUNG where IdNguoiDung = '" + id + "'");
                 bd.DiaChiChinhXac = dr["SoNha"].ToString() + ", " + dr["Pho"].ToString() + ", " + dr["Phuong"].ToString() + ", " + dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
                 bd.ThoiGian = dr["ThoiGianDang"].ToString();
+                bd.IDBai = dr["IdBai"].ToString();
+                bd.IDNguoiDang = id;
                 flowLayoutPanel1.Controls.Add(bd);
-
             }
-
-            flowLayoutPanel1.Height = 270 * 5 + 50;
+            flowLayoutPanel1.Height = 270 * dt.Rows.Count + 50;
             this.Height = flowLayoutPanel1.Height + 150;
         }
     }

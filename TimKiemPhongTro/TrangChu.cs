@@ -86,14 +86,14 @@ namespace TimKiemPhongTro
         private void iconYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích");
             flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void lvYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích");
             flowLayoutPanel1.Controls.Add(ds);
         }
 
