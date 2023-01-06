@@ -97,8 +97,8 @@ namespace TimKiemPhongTro
         private string _mk;
         private string _sdt;
         private int _loai;
-        private Image _avt;
-        private Image _zalo;
+        private string _avt;
+        private string _zalo;
 
         public string ID
         {
@@ -136,13 +136,13 @@ namespace TimKiemPhongTro
             set { _loai = value; }
         }
 
-        public Image AVT
+        public string AVT
         {
             get { return _avt; }
             set { _avt = value; }
         }
 
-        public Image ZALO
+        public string ZALO
         {
             get { return _zalo; }
             set { _zalo = value; }

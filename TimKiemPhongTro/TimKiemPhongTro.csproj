@@ -70,6 +70,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="components\binhluan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\binhluan.Designer.cs">
+      <DependentUpon>binhluan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\cmt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\cmt.Designer.cs">
+      <DependentUpon>cmt.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\DSLichSuYeuThich.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +178,12 @@
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="components\binhluan.resx">
+      <DependentUpon>binhluan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\cmt.resx">
+      <DependentUpon>cmt.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\DSLichSuYeuThich.resx">
       <DependentUpon>DSLichSuYeuThich.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +312,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\resource\icon\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\send-message.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

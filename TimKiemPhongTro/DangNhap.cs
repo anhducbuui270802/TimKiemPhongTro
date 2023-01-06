@@ -40,8 +40,8 @@ namespace TimKiemPhongTro
                         Var.user.MK = dr["MK"].ToString();
                         Var.user.SDT = dr["SDT"].ToString();
                         Var.user.Loai = int.Parse(dr["Loai"].ToString());
-                        Var.user.AVT = Image.FromFile(dr["Avt"].ToString());
-                        Var.user.ZALO = Image.FromFile(dr["Zalo"].ToString());
+                        Var.user.AVT = dr["Avt"].ToString();
+                        Var.user.ZALO = dr["Zalo"].ToString();
                     }
 
                     DialogResult result = MessageBox.Show("Đăng nhập thành công!");
