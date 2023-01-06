@@ -17,10 +17,14 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
-        //public YeuThichLichSuItem(baidang bd) : this ()
-        //{
-        //    baidang = bd;
-        //}
+        private bool yeutich = true;
+        private string IdBai;
+
+        public YeuThichLichSuItem(bool status, string id) : this()
+        {
+            yeutich = status;
+            IdBai = id;
+        }
 
         private string _time;
         //private baidang _baidang;
@@ -30,6 +34,31 @@ namespace TimKiemPhongTro.components
         {
             get { return _time; }
             set { _time = value; lbThoiGian.Text = value; }
+        }
+
+        private void ptbDelete_Click(object sender, EventArgs e)
+        {
+            if (yeutich)
+            {
+                sql.RunSQL(
+                    $"""
+                    delete from YEUTHICH where IdBai = '{IdBai}' and IdNguoiDung = '{Var.user.ID}'
+                    """
+                    );
+                var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+                trangchu.YeuThich_LichSu_Load("Danh sách bài đăng yêu thích", true);
+            }
+            else
+            {
+                sql.RunSQL(
+                    $"""
+                    delete from LICHSU where IdBai = '{IdBai}' and IdNguoiDung = '{Var.user.ID}'
+                    """
+                    );
+                var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+                trangchu.YeuThich_LichSu_Load("Lịch sử xem", false);
+
+            }
         }
 
         //[Category("Custom Props")]

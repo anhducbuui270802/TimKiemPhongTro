@@ -44,6 +44,8 @@
             this.btnDangTinMoi = new CustomButton.VBButton();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnDangxuat = new CustomButton.VBButton();
+            this.btnLichSu = new CustomButton.VBButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.xemTheoGia1 = new TimKiemPhongTro.components.XemTheoGia();
             this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
@@ -58,6 +60,7 @@
             this.pnYeuThich.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconYeuThich)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -259,11 +262,53 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Lavender;
+            this.panel5.Controls.Add(this.btnDangxuat);
+            this.panel5.Controls.Add(this.btnLichSu);
             this.panel5.Location = new System.Drawing.Point(1023, 61);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(138, 174);
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
+            // 
+            // btnDangxuat
+            // 
+            this.btnDangxuat.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDangxuat.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDangxuat.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDangxuat.BorderRadius = 10;
+            this.btnDangxuat.BorderSize = 0;
+            this.btnDangxuat.FlatAppearance.BorderSize = 0;
+            this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangxuat.ForeColor = System.Drawing.Color.White;
+            this.btnDangxuat.Location = new System.Drawing.Point(3, 43);
+            this.btnDangxuat.Name = "btnDangxuat";
+            this.btnDangxuat.Size = new System.Drawing.Size(132, 34);
+            this.btnDangxuat.TabIndex = 1;
+            this.btnDangxuat.Text = "Đăng xuất";
+            this.btnDangxuat.TextColor = System.Drawing.Color.White;
+            this.btnDangxuat.UseVisualStyleBackColor = false;
+            this.btnDangxuat.Click += new System.EventHandler(this.btnDangxuat_Click);
+            // 
+            // btnLichSu
+            // 
+            this.btnLichSu.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnLichSu.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnLichSu.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnLichSu.BorderRadius = 10;
+            this.btnLichSu.BorderSize = 0;
+            this.btnLichSu.FlatAppearance.BorderSize = 0;
+            this.btnLichSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSu.ForeColor = System.Drawing.Color.White;
+            this.btnLichSu.Location = new System.Drawing.Point(3, 3);
+            this.btnLichSu.Name = "btnLichSu";
+            this.btnLichSu.Size = new System.Drawing.Size(132, 34);
+            this.btnLichSu.TabIndex = 0;
+            this.btnLichSu.Text = "Lịch sử xem";
+            this.btnLichSu.TextColor = System.Drawing.Color.White;
+            this.btnLichSu.UseVisualStyleBackColor = false;
+            this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
             // 
             // panel3
             // 
@@ -329,6 +374,7 @@
             this.pnYeuThich.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconYeuThich)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -357,6 +403,8 @@
         private components.XemTheoGia xemTheoGia1;
         private components.XemTheoDienTich xemTheoDienTich1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private CustomButton.VBButton btnDangxuat;
+        private CustomButton.VBButton btnLichSu;
     }
 }
 

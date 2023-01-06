@@ -18,7 +18,6 @@ namespace TimKiemPhongTro
             InitializeComponent();
             sql.Connect();
             DanhSachTinDang ds = new DanhSachTinDang();
-            //DanhSachTinDang.dt = sql.GetDataToTable("select * from BAIDANG");
             flowLayoutPanel1.Controls.Add(ds);
         }
 
@@ -32,7 +31,7 @@ namespace TimKiemPhongTro
             flowLayoutPanel1.Controls.Add(panel3);
         }
 
-        public void SetVisibal(bool flag)
+        public void SetVisible(bool flag)
         {
             if(flag)
             {
@@ -86,14 +85,21 @@ namespace TimKiemPhongTro
         private void iconYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích");
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích", true);
             flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void lvYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích");
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích", true);
+            flowLayoutPanel1.Controls.Add(ds);
+        }
+
+        public void YeuThich_LichSu_Load(string title, bool status)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich(title, status);
             flowLayoutPanel1.Controls.Add(ds);
         }
 
@@ -129,7 +135,20 @@ namespace TimKiemPhongTro
             TrangChu_Load(sender, e);
         }
 
+        private void btnDangxuat_Click(object sender, EventArgs e)
+        {
+            Var.user = new User();
+            panel5.Visible = false;
+            SetVisible(false);
+            TrangChu_Load(sender, e);
+        }
 
-
+        private void btnLichSu_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Lịch sử xem", false);
+            flowLayoutPanel1.Controls.Add(ds);
+            panel5.Visible = false;
+        }
     }
 }

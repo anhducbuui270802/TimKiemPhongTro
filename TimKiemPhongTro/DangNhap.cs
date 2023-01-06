@@ -48,7 +48,7 @@ namespace TimKiemPhongTro
                     if (result == DialogResult.OK)
                     {
                         var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-                        trangchu.SetVisibal(true);
+                        trangchu.SetVisible(true);
                         this.Close();
                     }
                 }
