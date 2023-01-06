@@ -139,14 +139,38 @@ namespace TimKiemPhongTro.components
 
         private void ptbAnh_Click(object sender, EventArgs e)
         {
+            if (Var.user.ID != null)
+            {
+                string temp = sql.GetFieldValues(
+                    $"""
+                    select IdBai from LICHSU where IdBai = '{this.IDBai}' and IdNguoiDung = '{Var.user.ID}'
+                    """
+                    );
+                if (temp != "")
+                {
+                    sql.RunSQL(
+                        $"""
+                        update LICHSU set ThoiGian = '{DateTime.Now.ToString()}' 
+                        where IdBai = '{this.IDBai}' and IdNguoiDung = '{Var.user.ID}'
+                        """
+                        );
+                }
+                else
+                {
+                    sql.RunSQL(
+                        $"""
+                        insert into LICHSU values ('{this.IDBai}', '{Var.user.ID}','{DateTime.Now.ToString()}')
+                        """
+                        );
+                }
+            }
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
             trangchu.HienThiChiTiet(this);
         }
 
         private void lbTitle_Click(object sender, EventArgs e)
         {
-            var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-            trangchu.HienThiChiTiet(this);
+           ptbAnh_Click(sender, e);
         }
 
         private void btnZalo_Click(object sender, EventArgs e)

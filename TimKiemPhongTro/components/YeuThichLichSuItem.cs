@@ -23,7 +23,7 @@ namespace TimKiemPhongTro.components
         //}
 
         private string _time;
-        private baidang _baidang;
+        //private baidang _baidang;
 
         [Category("Custom Props")]
         public string Time

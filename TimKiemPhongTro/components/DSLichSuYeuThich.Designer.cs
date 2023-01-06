@@ -71,6 +71,7 @@
             this.btnLamTrong.Text = "Làm trống danh sách";
             this.btnLamTrong.TextColor = System.Drawing.Color.White;
             this.btnLamTrong.UseVisualStyleBackColor = false;
+            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // DSLichSuYeuThich
             // 
