@@ -85,18 +85,18 @@ namespace TimKiemPhongTro
         private void iconYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích", true);
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích", 0);
             flowLayoutPanel1.Controls.Add(ds);
         }
 
         private void lvYeuThich_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích", true);
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đăng yêu thích", 0);
             flowLayoutPanel1.Controls.Add(ds);
         }
 
-        public void YeuThich_LichSu_Load(string title, bool status)
+        public void YeuThich_LichSu_Load(string title, int status)
         {
             flowLayoutPanel1.Controls.Clear();
             DSLichSuYeuThich ds = new DSLichSuYeuThich(title, status);
@@ -157,7 +157,15 @@ namespace TimKiemPhongTro
         private void btnLichSu_Click(object sender, EventArgs e)
         {
             flowLayoutPanel1.Controls.Clear();
-            DSLichSuYeuThich ds = new DSLichSuYeuThich("Lịch sử xem", false);
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Lịch sử xem", 1);
+            flowLayoutPanel1.Controls.Add(ds);
+            panel5.Visible = false;
+        }
+
+        private void btnBaiDaDang_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đã đăng", 2);
             flowLayoutPanel1.Controls.Add(ds);
             panel5.Visible = false;
         }

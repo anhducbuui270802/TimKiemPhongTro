@@ -44,6 +44,7 @@
             this.btnDangTinMoi = new CustomButton.VBButton();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnBaiDaDang = new CustomButton.VBButton();
             this.btnDangxuat = new CustomButton.VBButton();
             this.btnLichSu = new CustomButton.VBButton();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -262,6 +263,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Lavender;
+            this.panel5.Controls.Add(this.btnBaiDaDang);
             this.panel5.Controls.Add(this.btnDangxuat);
             this.panel5.Controls.Add(this.btnLichSu);
             this.panel5.Location = new System.Drawing.Point(1023, 61);
@@ -269,6 +271,26 @@
             this.panel5.Size = new System.Drawing.Size(138, 174);
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
+            // 
+            // btnBaiDaDang
+            // 
+            this.btnBaiDaDang.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBaiDaDang.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBaiDaDang.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBaiDaDang.BorderRadius = 10;
+            this.btnBaiDaDang.BorderSize = 0;
+            this.btnBaiDaDang.FlatAppearance.BorderSize = 0;
+            this.btnBaiDaDang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBaiDaDang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaiDaDang.ForeColor = System.Drawing.Color.White;
+            this.btnBaiDaDang.Location = new System.Drawing.Point(3, 43);
+            this.btnBaiDaDang.Name = "btnBaiDaDang";
+            this.btnBaiDaDang.Size = new System.Drawing.Size(132, 34);
+            this.btnBaiDaDang.TabIndex = 2;
+            this.btnBaiDaDang.Text = "Bài đã đăng";
+            this.btnBaiDaDang.TextColor = System.Drawing.Color.White;
+            this.btnBaiDaDang.UseVisualStyleBackColor = false;
+            this.btnBaiDaDang.Click += new System.EventHandler(this.btnBaiDaDang_Click);
             // 
             // btnDangxuat
             // 
@@ -281,7 +303,7 @@
             this.btnDangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangxuat.ForeColor = System.Drawing.Color.White;
-            this.btnDangxuat.Location = new System.Drawing.Point(3, 43);
+            this.btnDangxuat.Location = new System.Drawing.Point(3, 83);
             this.btnDangxuat.Name = "btnDangxuat";
             this.btnDangxuat.Size = new System.Drawing.Size(132, 34);
             this.btnDangxuat.TabIndex = 1;
@@ -405,6 +427,7 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private CustomButton.VBButton btnDangxuat;
         private CustomButton.VBButton btnLichSu;
+        private CustomButton.VBButton btnBaiDaDang;
     }
 }
 

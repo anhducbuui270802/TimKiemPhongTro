@@ -17,12 +17,12 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
-        private bool yeutich = true;
+        private int status = 0;
         private string IdBai;
 
-        public YeuThichLichSuItem(bool status, string id) : this()
+        public YeuThichLichSuItem(int status, string id) : this()
         {
-            yeutich = status;
+            this.status = status;
             IdBai = id;
         }
 
@@ -38,7 +38,7 @@ namespace TimKiemPhongTro.components
 
         private void ptbDelete_Click(object sender, EventArgs e)
         {
-            if (yeutich)
+            if (status == 0)
             {
                 sql.RunSQL(
                     $"""
@@ -46,9 +46,9 @@ namespace TimKiemPhongTro.components
                     """
                     );
                 var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-                trangchu.YeuThich_LichSu_Load("Danh sách bài đăng yêu thích", true);
+                trangchu.YeuThich_LichSu_Load("Danh sách bài đăng yêu thích", 0);
             }
-            else
+            else if(status == 1)
             {
                 sql.RunSQL(
                     $"""
@@ -56,8 +56,17 @@ namespace TimKiemPhongTro.components
                     """
                     );
                 var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-                trangchu.YeuThich_LichSu_Load("Lịch sử xem", false);
-
+                trangchu.YeuThich_LichSu_Load("Lịch sử xem", 1);
+            }
+            else if (status == 2)
+            {
+                sql.RunSQL(
+                    $"""
+                    delete from BAIDANG where IdBai = '{IdBai}' and IdNguoiDang = '{Var.user.ID}'
+                    """
+                    );
+                var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+                trangchu.YeuThich_LichSu_Load("Danh sách bài đã đăng", 2);
             }
         }
 
