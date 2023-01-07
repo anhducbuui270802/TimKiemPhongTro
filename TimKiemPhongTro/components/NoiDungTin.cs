@@ -64,12 +64,12 @@ namespace TimKiemPhongTro.components
         {
             string path;
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "png files (*.png)|*png|jpg files (*.jpg)|*jpg|All files (*.*)|*.*";
+            open.Filter = "All files (*.*)|*.*|png files (*.png)|*png|jpg files (*.jpg)|*jpg";
             open.Multiselect = true;
-            open.InitialDirectory = "D:\\UIT\\Nam3_Ky1\\c#\\TimKiemPhongTro\\TimKiemPhongTro\\bin\\Debug\\resource\\icon";
+            open.InitialDirectory = Var.currentDir + "\\resource";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                path = open.FileName;
+                path = open.FileName.Replace(Var.currentDir + @"\", "").Replace(@"\", "/");
                 _imagepath = path;
                 pictureBox1.Image = Image.FromFile(path);
                 Console.WriteLine(path);

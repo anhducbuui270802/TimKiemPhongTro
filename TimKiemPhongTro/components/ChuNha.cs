@@ -25,6 +25,7 @@ namespace TimKiemPhongTro.components
         public ChuNha(baidang bd) : this()
         {
             ptbUser.Image = bd.ImgNguoiDung;
+            lbTenNguoiDung.Text = bd.TenNguoiDung;
             btnSDT.Text = bd.SDT;
             IdNguoiDang = bd.IDNguoiDang;
             IdBai = bd.IDBai;
@@ -47,8 +48,7 @@ namespace TimKiemPhongTro.components
 
         private void btnZalo_Click(object sender, EventArgs e)
         {
-            ZALO zl = new ZALO();
-            zl.ShowDialog();
+            System.Diagnostics.Process.Start($"""https://zalo.me/{btnSDT.Text}""");
         }
 
         private void btnYeuThich_Click(object sender, EventArgs e)

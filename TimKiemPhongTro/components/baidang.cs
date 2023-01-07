@@ -175,8 +175,8 @@ namespace TimKiemPhongTro.components
 
         private void btnZalo_Click(object sender, EventArgs e)
         {
-            ZALO zl = new ZALO();
-            zl.ShowDialog();
+            System.Diagnostics.Process.Start($"""https://zalo.me/{SDT}""");
+
         }
     }
 }

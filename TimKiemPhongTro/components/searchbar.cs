@@ -25,7 +25,7 @@ namespace TimKiemPhongTro.components
             { }
             else
             { 
-                string loaibds = "LoaiBDS = " + cbLoaiBDS.Text;
+                string loaibds = "LoaiBDS = N'" + cbLoaiBDS.Text + "',";
                 flag = true;
             }
 
@@ -33,7 +33,7 @@ namespace TimKiemPhongTro.components
             { }
             else
             {
-                string tinh = "Tinh = " + cbTinh.Text;
+                string tinh = "Tinh = N'" + cbTinh.Text + "',";
                 flag = true;
             }
 
@@ -59,6 +59,7 @@ namespace TimKiemPhongTro.components
                 string sql_statement =
                 $"""
                 select * from BAIDANG where 
+
                 """;
             }
             else

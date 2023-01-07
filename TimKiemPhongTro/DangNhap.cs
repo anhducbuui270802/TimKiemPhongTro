@@ -41,7 +41,6 @@ namespace TimKiemPhongTro
                         Var.user.SDT = dr["SDT"].ToString();
                         Var.user.Loai = int.Parse(dr["Loai"].ToString());
                         Var.user.AVT = dr["Avt"].ToString();
-                        Var.user.ZALO = dr["Zalo"].ToString();
                     }
 
                     DialogResult result = MessageBox.Show("Đăng nhập thành công!");

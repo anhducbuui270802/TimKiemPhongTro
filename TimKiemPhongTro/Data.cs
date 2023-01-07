@@ -152,6 +152,7 @@ namespace TimKiemPhongTro
     internal class Var
     {
         public static User user = new User();
+        public static string currentDir = Environment.CurrentDirectory;
     }
 
     internal class function

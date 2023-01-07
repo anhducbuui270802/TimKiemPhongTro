@@ -20,7 +20,7 @@ namespace TimKiemPhongTro
         }
 
         public static string _avtpath = "resource/icon/dangnhapicon.png";
-        public static string _zalopath = "resource/icon/zalo-icon.png";
+
 
         private void DangKy_Load(object sender, EventArgs e)
         {
@@ -30,27 +30,14 @@ namespace TimKiemPhongTro
         private void ptbAvt_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "png files (*.png)|*png|jpg files (*.jpg)|*jpg|All files (*.*)|*.*";
+            open.Filter = "All files (*.*)|*.*|png files (*.png)|*png|jpg files (*.jpg)|*jpg";
             open.Multiselect = false;
-            open.InitialDirectory = "D:\\UIT\\Nam3_Ky1\\c#\\TimKiemPhongTro\\TimKiemPhongTro\\bin\\Debug\\resource\\icon";
+            
+            open.InitialDirectory = Var.currentDir + "\\resource";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                _avtpath = open.FileName;
+                _avtpath =  open.FileName.Replace(Var.currentDir + @"\", "").Replace(@"\","/");
                 ptbAvt.Image = Image.FromFile(_avtpath);
-            }
-        }
-
-        private void ptbZalo_Click(object sender, EventArgs e)
-        {
-
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "png files (*.png)|*png|jpg files (*.jpg)|*jpg|All files (*.*)|*.*";
-            open.Multiselect = false;
-            open.InitialDirectory = "D:\\UIT\\Nam3_Ky1\\c#\\TimKiemPhongTro\\TimKiemPhongTro\\bin\\Debug\\resource\\icon";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                _zalopath = open.FileName;
-                ptbZalo.Image = Image.FromFile(_zalopath);
             }
         }
 
@@ -63,7 +50,7 @@ namespace TimKiemPhongTro
             temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
             if (temp == "")
             {
-                sql.RunSQL("insert into NGUOIDUNG values ('" + function.getId("ND") + "',N'" + txtHoTen.Text.Trim() + "', N'" + txtTenDangNhap.Text.Trim() + "','" + txtMK.Text.Trim() + "','" + txtSDT.Text.Trim() + "'," + loai.ToString() + ",N'" + _avtpath + "',N'" + _zalopath + "')");
+                sql.RunSQL("insert into NGUOIDUNG values ('" + function.getId("ND") + "',N'" + txtHoTen.Text.Trim() + "', N'" + txtTenDangNhap.Text.Trim() + "','" + txtMK.Text.Trim() + "','" + txtSDT.Text.Trim() + "'," + loai.ToString() + ",N'" + _avtpath + "')");
                 System.Windows.MessageBox.Show("Tạo thành công");
             }
 

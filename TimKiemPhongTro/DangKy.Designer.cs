@@ -44,12 +44,9 @@
             this.txtMK = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.btnTaoTaiKhoan = new CustomButton.VBButton();
-            this.ptbZalo = new System.Windows.Forms.PictureBox();
             this.ptbAvt = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbZalo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,17 +215,6 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Thêm ảnh đại diện";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(916, 352);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(170, 25);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Thêm mã QR zalo";
-            // 
             // btnTaoTaiKhoan
             // 
             this.btnTaoTaiKhoan.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -249,17 +235,6 @@
             this.btnTaoTaiKhoan.UseVisualStyleBackColor = false;
             this.btnTaoTaiKhoan.Click += new System.EventHandler(this.btnTaoTaiKhoan_Click);
             // 
-            // ptbZalo
-            // 
-            this.ptbZalo.Image = global::TimKiemPhongTro.Properties.Resources.image_gallery;
-            this.ptbZalo.Location = new System.Drawing.Point(760, 352);
-            this.ptbZalo.Name = "ptbZalo";
-            this.ptbZalo.Size = new System.Drawing.Size(150, 150);
-            this.ptbZalo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbZalo.TabIndex = 13;
-            this.ptbZalo.TabStop = false;
-            this.ptbZalo.Click += new System.EventHandler(this.ptbZalo_Click);
-            // 
             // ptbAvt
             // 
             this.ptbAvt.Image = global::TimKiemPhongTro.Properties.Resources.image_gallery;
@@ -277,9 +252,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1191, 659);
             this.Controls.Add(this.btnTaoTaiKhoan);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.ptbZalo);
             this.Controls.Add(this.ptbAvt);
             this.Controls.Add(this.txtMK);
             this.Controls.Add(this.label8);
@@ -299,7 +272,6 @@
             this.Load += new System.EventHandler(this.DangKy_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbZalo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -324,9 +296,7 @@
         private System.Windows.Forms.TextBox txtMK;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox ptbAvt;
-        private System.Windows.Forms.PictureBox ptbZalo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private CustomButton.VBButton btnTaoTaiKhoan;
     }
 }
