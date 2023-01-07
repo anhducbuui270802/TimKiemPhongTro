@@ -119,6 +119,16 @@ namespace TimKiemPhongTro
                 panel5.Visible = true;
         }
 
+        public void LoadDanhSach (DataTable dt)
+        {
+            DanhSachTinDang dsTinDang = new DanhSachTinDang(dt);
+            searchbar search = new searchbar();
+            flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.Add(search);
+            flowLayoutPanel1.Controls.Add(dsTinDang);
+            flowLayoutPanel1.Controls.Add(panel3);
+        }
+
 
         public void HienThiChiTiet(baidang bd)
         {
@@ -127,15 +137,12 @@ namespace TimKiemPhongTro
             binhluan cmt = new binhluan(bd.IDBai);
             chunha.Dock = DockStyle.Top;
             cmt.Dock = DockStyle.Top;
-
             Panel p = new Panel();
             p.Size = new Size(355, 1000);
             p.Controls.Add(cmt);
             p.Controls.Add(chunha);
             ChiTietBaiDang chitiet = new ChiTietBaiDang(bd);
             flowLayoutPanel1.Controls.Add(chitiet);
-            //flowLayoutPanel1.Controls.Add(chunha);
-            //flowLayoutPanel1.Controls.Add(bl);
             flowLayoutPanel1.Controls.Add(p);
 
 
