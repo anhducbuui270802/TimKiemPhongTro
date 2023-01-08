@@ -142,6 +142,7 @@
             this.Controls.Add(this.cbLoaiBDS);
             this.Name = "searchbar";
             this.Size = new System.Drawing.Size(1138, 52);
+            this.Load += new System.EventHandler(this.searchbar_Load);
             this.ResumeLayout(false);
 
         }

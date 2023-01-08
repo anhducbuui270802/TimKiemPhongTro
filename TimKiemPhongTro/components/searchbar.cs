@@ -17,10 +17,28 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
-        private void find()
+        public static string loaibds, tinh, gia, dientich;
+        public static bool flag = false;
+
+        private List<string> listtinh = sql.GetFieldValuesList("select Tinh from BAIDANG");
+
+        //private int index_gia;
+        //private int index_dientich;
+
+        //public int IndexGia
+        //{
+        //    get { return index_gia; }   
+        //    set { index_gia = value; cbGia.SelectedIndex = value; }  
+        //}
+
+        //public int IndexDientich
+        //{
+        //    get { return index_dientich; }
+        //    set { index_dientich = value; }
+        //}
+
+        private void query_search()
         {
-            bool flag = false;
-            string loaibds, tinh, gia, dientich;
 
             if (cbLoaiBDS.Text == "Chọn loại bất động sản")
             { loaibds = ""; }
@@ -102,14 +120,14 @@ namespace TimKiemPhongTro.components
                     default:
                         dientich = $"""DienTich >= {float.Parse(cbDienTich.Text) - 10} and DienTich <= {float.Parse(cbDienTich.Text) + 10} and""";
                         break;
-
-
                 }
 
                 flag = true;
             }
+        }
 
-
+        public static DataTable search()
+        {
             if (flag)
             {
                 string sql_statement =
@@ -127,21 +145,88 @@ namespace TimKiemPhongTro.components
                 """;
                 DanhSachTinDang.dt = sql.GetDataToTable(sql_statement);
             }
+            return DanhSachTinDang.dt;
+        }
 
-
-
+        private void searchbar_Load(object sender, EventArgs e)
+        {
+            foreach (string tinh in listtinh)
+            {
+                cbTinh.Items.Add(tinh);
+            }
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            find();
+            query_search();
+            search();
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
             trangchu.LoadDanhSach(DanhSachTinDang.dt);
         }
 
-        public void helo()
+        public static void setgia(int index)
         {
-            Console.WriteLine("hello");
+            switch (index)
+            {
+                case 0:
+                    gia = "GiaPhong <= 1 and";
+                    break;
+                case 1:
+                    gia = "GiaPhong >= 1 and GiaPhong <= 2 and";
+                    break;
+                case 2:
+                    gia = "GiaPhong >= 2 and GiaPhong <= 3 and";
+                    break;
+                case 3:
+                    gia = "GiaPhong >= 3 and GiaPhong <= 5 and";
+                    break;
+                case 4:
+                    gia = "GiaPhong >= 5 and GiaPhong <= 7 and";
+                    break;
+                case 5:
+                    gia = "GiaPhong >= 7 and GiaPhong <= 10 and";
+                    break;
+                case 6:
+                    gia = "GiaPhong >= 10 and GiaPhong <= 15 and";
+                    break;
+                case 7:
+                    gia = "GiaPhong >= 15 and";
+                    break;
+               
+            }
+            flag = true;
+            search();
+            var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+            trangchu.LoadDanhSach(DanhSachTinDang.dt);
+        }
+
+        public static void setdientich(int index)
+        {
+
+            switch (index)
+            {
+                case 0:
+                    dientich = "DienTich <= 20 and";
+                    break;
+                case 1:
+                    dientich = "DienTich >= 20 and DienTich <= 30 and";
+                    break;
+                case 2:
+                    dientich = "DienTich >= 30 and DienTich <= 50 and";
+                    break;
+                case 3:
+                    dientich = "DienTich >= 50 and DienTich <= 70 and";
+                    break;
+                case 4:
+                    dientich = "DienTich >= 70 and DienTich <= 90 and";
+                    break;
+                case 5:
+                    dientich = "DienTich >= 90 and";
+                    break;
+            }
+            flag = true;
+            var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
+            trangchu.LoadDanhSach(search());
         }
     }
 }

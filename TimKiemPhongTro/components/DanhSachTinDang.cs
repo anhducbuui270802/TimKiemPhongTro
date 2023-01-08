@@ -68,5 +68,7 @@ namespace TimKiemPhongTro.components
             flowLayoutPanel1.Height = 270 * dt.Rows.Count + 50;
             this.Height = flowLayoutPanel1.Height + 150;
         }
+
+
     }
 }
