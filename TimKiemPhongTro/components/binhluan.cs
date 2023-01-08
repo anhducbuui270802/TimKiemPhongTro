@@ -42,6 +42,7 @@ namespace TimKiemPhongTro.components
             foreach (DataRow dr in dt.Rows)
             {
                 cmt bl = new cmt();
+                bl.SDT = sql.GetFieldValues($"""select SDT from NGUOIDUNG where IdNguoiDung = '{dr["IdNguoiDung"].ToString()}'""");
                 bl.AVT = Image.FromFile(sql.GetFieldValues($"""select Avt from NGUOIDUNG where IdNguoiDung = '{dr["IdNguoiDung"].ToString()}'"""));
                 bl.TenNguoiDung = sql.GetFieldValues($"""select HoTen from NGUOIDUNG where IdNguoiDung = '{dr["IdNguoiDung"].ToString()}'""");
                 bl.CMT = dr["CMT"].ToString();

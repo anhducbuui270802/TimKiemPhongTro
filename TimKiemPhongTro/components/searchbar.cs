@@ -138,5 +138,10 @@ namespace TimKiemPhongTro.components
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
             trangchu.LoadDanhSach(DanhSachTinDang.dt);
         }
+
+        public void helo()
+        {
+            Console.WriteLine("hello");
+        }
     }
 }

@@ -38,21 +38,23 @@
             // txtCMT
             // 
             this.txtCMT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCMT.Location = new System.Drawing.Point(49, 28);
+            this.txtCMT.Location = new System.Drawing.Point(49, 22);
             this.txtCMT.Name = "txtCMT";
+            this.txtCMT.ReadOnly = true;
             this.txtCMT.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.txtCMT.Size = new System.Drawing.Size(295, 70);
+            this.txtCMT.Size = new System.Drawing.Size(295, 76);
             this.txtCMT.TabIndex = 1;
             this.txtCMT.Text = "";
             // 
             // lbNgDung
             // 
             this.lbNgDung.AutoSize = true;
-            this.lbNgDung.Location = new System.Drawing.Point(52, 9);
+            this.lbNgDung.Location = new System.Drawing.Point(49, 3);
             this.lbNgDung.Name = "lbNgDung";
             this.lbNgDung.Size = new System.Drawing.Size(69, 16);
             this.lbNgDung.TabIndex = 2;
             this.lbNgDung.Text = "anhducbui";
+            this.lbNgDung.Click += new System.EventHandler(this.lbNgDung_Click);
             // 
             // lbThoiGian
             // 
@@ -72,6 +74,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // cmt
             // 

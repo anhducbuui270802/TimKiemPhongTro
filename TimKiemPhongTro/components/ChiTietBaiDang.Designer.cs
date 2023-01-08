@@ -49,6 +49,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.webBrowser = new System.Windows.Forms.WebBrowser();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -214,7 +215,7 @@
             // 
             this.txtThongTinMoTa.AcceptsTab = true;
             this.txtThongTinMoTa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtThongTinMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThongTinMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThongTinMoTa.Location = new System.Drawing.Point(3, 588);
             this.txtThongTinMoTa.Name = "txtThongTinMoTa";
             this.txtThongTinMoTa.Size = new System.Drawing.Size(751, 323);
@@ -290,10 +291,19 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Thông tin liên hệ";
             // 
+            // webBrowser
+            // 
+            this.webBrowser.Location = new System.Drawing.Point(0, 1093);
+            this.webBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser.Name = "webBrowser";
+            this.webBrowser.Size = new System.Drawing.Size(753, 431);
+            this.webBrowser.TabIndex = 12;
+            // 
             // ChiTietBaiDang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtThongTinMoTa);
             this.Controls.Add(this.label3);
@@ -306,7 +316,7 @@
             this.Controls.Add(this.ptbHinhAnh);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ChiTietBaiDang";
-            this.Size = new System.Drawing.Size(757, 1208);
+            this.Size = new System.Drawing.Size(757, 1534);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -347,5 +357,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.WebBrowser webBrowser;
     }
 }

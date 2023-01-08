@@ -21,6 +21,13 @@ namespace TimKiemPhongTro.components
         private string _cmt;
         private Image _image;
         private string _thoigian;
+        private string _sdt;
+
+        public string SDT
+        {
+            get { return _sdt; }
+            set { _sdt = value; }
+        }
 
         public string TenNguoiDung
         {
@@ -46,5 +53,14 @@ namespace TimKiemPhongTro.components
             set { _thoigian = value; lbThoiGian.Text = value; }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start($"""https://zalo.me/{SDT}""");
+        }
+
+        private void lbNgDung_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start($"""https://zalo.me/{SDT}""");
+        }
     }
 }

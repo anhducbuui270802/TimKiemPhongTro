@@ -41,16 +41,16 @@
             this.pnYeuThich = new System.Windows.Forms.Panel();
             this.lvYeuThich = new System.Windows.Forms.Label();
             this.iconYeuThich = new System.Windows.Forms.PictureBox();
-            this.btnDangTinMoi = new CustomButton.VBButton();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnBaiDaDang = new CustomButton.VBButton();
             this.btnDangxuat = new CustomButton.VBButton();
             this.btnLichSu = new CustomButton.VBButton();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.xemTheoGia1 = new TimKiemPhongTro.components.XemTheoGia();
             this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnDangTinMoi = new CustomButton.VBButton();
             this.panel1.SuspendLayout();
             this.pnDangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconDangNhap)).BeginInit();
@@ -227,27 +227,6 @@
             this.iconYeuThich.TabStop = false;
             this.iconYeuThich.Click += new System.EventHandler(this.iconYeuThich_Click);
             // 
-            // btnDangTinMoi
-            // 
-            this.btnDangTinMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDangTinMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
-            this.btnDangTinMoi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
-            this.btnDangTinMoi.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDangTinMoi.BorderRadius = 10;
-            this.btnDangTinMoi.BorderSize = 0;
-            this.btnDangTinMoi.FlatAppearance.BorderSize = 0;
-            this.btnDangTinMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangTinMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangTinMoi.ForeColor = System.Drawing.Color.White;
-            this.btnDangTinMoi.Location = new System.Drawing.Point(1190, 15);
-            this.btnDangTinMoi.Name = "btnDangTinMoi";
-            this.btnDangTinMoi.Size = new System.Drawing.Size(120, 40);
-            this.btnDangTinMoi.TabIndex = 1;
-            this.btnDangTinMoi.Text = "Đăng tin mới";
-            this.btnDangTinMoi.TextColor = System.Drawing.Color.White;
-            this.btnDangTinMoi.UseVisualStyleBackColor = false;
-            this.btnDangTinMoi.Click += new System.EventHandler(this.btnDangTinMoi_Click);
-            // 
             // logo
             // 
             this.logo.BackColor = System.Drawing.Color.Transparent;
@@ -271,6 +250,25 @@
             this.panel5.Size = new System.Drawing.Size(138, 174);
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.xemTheoGia1);
+            this.panel3.Controls.Add(this.xemTheoDienTich1);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.MinimumSize = new System.Drawing.Size(375, 394);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(375, 441);
+            this.panel3.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(210, 76);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 865);
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btnBaiDaDang
             // 
@@ -332,16 +330,6 @@
             this.btnLichSu.UseVisualStyleBackColor = false;
             this.btnLichSu.Click += new System.EventHandler(this.btnLichSu_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.xemTheoGia1);
-            this.panel3.Controls.Add(this.xemTheoDienTich1);
-            this.panel3.Location = new System.Drawing.Point(3, 3);
-            this.panel3.MinimumSize = new System.Drawing.Size(375, 394);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 441);
-            this.panel3.TabIndex = 2;
-            // 
             // xemTheoGia1
             // 
             this.xemTheoGia1.BackColor = System.Drawing.Color.White;
@@ -360,14 +348,26 @@
             this.xemTheoDienTich1.Size = new System.Drawing.Size(355, 184);
             this.xemTheoDienTich1.TabIndex = 0;
             // 
-            // flowLayoutPanel1
+            // btnDangTinMoi
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.panel3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(210, 76);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 865);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.btnDangTinMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDangTinMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
+            this.btnDangTinMoi.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
+            this.btnDangTinMoi.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDangTinMoi.BorderRadius = 10;
+            this.btnDangTinMoi.BorderSize = 0;
+            this.btnDangTinMoi.FlatAppearance.BorderSize = 0;
+            this.btnDangTinMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangTinMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangTinMoi.ForeColor = System.Drawing.Color.White;
+            this.btnDangTinMoi.Location = new System.Drawing.Point(1190, 15);
+            this.btnDangTinMoi.Name = "btnDangTinMoi";
+            this.btnDangTinMoi.Size = new System.Drawing.Size(120, 40);
+            this.btnDangTinMoi.TabIndex = 1;
+            this.btnDangTinMoi.Text = "Đăng tin mới";
+            this.btnDangTinMoi.TextColor = System.Drawing.Color.White;
+            this.btnDangTinMoi.UseVisualStyleBackColor = false;
+            this.btnDangTinMoi.Click += new System.EventHandler(this.btnDangTinMoi_Click);
             // 
             // TrangChu
             // 
