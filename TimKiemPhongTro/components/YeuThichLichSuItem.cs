@@ -17,13 +17,29 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
-        private int status = 0;
+        private int status = 0; //0 : bai hat yeu thich , 1: lich su xem , 2: bai da dang
         private string IdBai;
+        private int trangthai;
 
         public YeuThichLichSuItem(int status, string id) : this()
         {
+            this.trangthai = int.Parse(sql.GetFieldValues($"""select TrangThai from BAIDANG where IdBai = '{id}'"""));
             this.status = status;
             IdBai = id;
+            Console.WriteLine(trangthai);
+            Console.WriteLine(id);
+
+            if (status == 2)
+            {
+                if(trangthai == 1)
+                {
+                    ptbUnhide.Visible = true;
+                }
+                else
+                {
+                    ptbHiden.Visible = true;
+                }
+            }
         }
 
         private string _time;
@@ -68,6 +84,30 @@ namespace TimKiemPhongTro.components
                 var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
                 trangchu.YeuThich_LichSu_Load("Danh sách bài đã đăng", 2);
             }
+        }
+
+        //trang thai = 1: hien thong tin 
+        //trang thai = 2: an thong tin 
+        //trang thai = 3: bai dang bi khoa boi admin
+        private void ptbHiden_Click(object sender, EventArgs e)
+        {
+            sql.RunSQL($"""update BAIDANG set TrangThai = 1 where IdBai = '{IdBai}'""");
+            ptbUnhide.Visible = true;
+            ptbHiden.Visible = false;
+        }
+
+        private void ptbUnhide_Click(object sender, EventArgs e)
+        {
+            if (Var.user.Loai == 2)
+            {
+                sql.RunSQL($"""update BAIDANG set TrangThai = 2 where IdBai = '{IdBai}'""");
+            }
+            else if (Var.user.Loai == 3)
+            {
+                sql.RunSQL($"""update BAIDANG set TrangThai = 3 where IdBai = '{IdBai}'""");
+            }
+            ptbUnhide.Visible = false;
+            ptbHiden.Visible = true;
         }
 
         //[Category("Custom Props")]

@@ -307,5 +307,14 @@
   <ItemGroup>
     <None Include="bin\Debug\resource\icon\send-message.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resource\icon\view.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
