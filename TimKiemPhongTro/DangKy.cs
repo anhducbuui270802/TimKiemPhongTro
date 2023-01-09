@@ -14,13 +14,35 @@ namespace TimKiemPhongTro
 {
     public partial class DangKy : Form
     {
+
+        private int status = 1; //  1 dang ky ; 2: sua thong tin
+        public static string _avtpath = "resource/icon/dangnhapicon.png";
+
         public DangKy()
         {
             InitializeComponent();
         }
 
-        public static string _avtpath = "resource/icon/dangnhapicon.png";
-
+        public DangKy(int status) : this()
+        {
+            this.status = status;
+            if(status == 1)
+            {
+                label1.Text = "Tạo tài khoản mới";
+            }
+            else if(status == 2)
+            {
+                label1.Text = "Cập nhật thông tin";
+                btnTaoTaiKhoan.Text = "Cập nhật";
+                panel1.Visible = false;
+                txtHoTen.Text = Var.user.HoTen;
+                txtTenDangNhap.Text = Var.user.Tendangnhap;
+                txtSDT.Text = Var.user.SDT;
+                txtEmail.Text = Var.user.Email;
+                txtMK.Text = Var.user.MK;
+                ptbAvt.Image = Image.FromFile(Var.user.AVT);
+            }
+        }
 
         private void DangKy_Load(object sender, EventArgs e)
         {
@@ -43,20 +65,64 @@ namespace TimKiemPhongTro
 
         private void btnTaoTaiKhoan_Click(object sender, EventArgs e)
         {
-            int loai = 1;
-            if (rdoTimKiem.Checked) loai = 1;
-            if (rdoChinhChu.Checked) loai = 2;
-            string temp = "";
-            temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
-            if (temp == "")
+            if (status == 1)
             {
-                sql.RunSQL("insert into NGUOIDUNG values ('" + function.getId("ND") + "',N'" + txtHoTen.Text.Trim() + "', N'" + txtTenDangNhap.Text.Trim() + "','" + txtMK.Text.Trim() + "','" + txtSDT.Text.Trim() + "'," + loai.ToString() + ",N'" + _avtpath + "')");
-                System.Windows.MessageBox.Show("Tạo thành công");
+                int loai = 1;
+                if (rdoTimKiem.Checked) loai = 1;
+                if (rdoChinhChu.Checked) loai = 2;
+                string temp = "";
+                temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
+                if (temp == "")
+                {
+                    //sql.RunSQL("insert into NGUOIDUNG values ('" + function.getId("ND") + "',N'" + txtHoTen.Text.Trim() + "', N'" + txtTenDangNhap.Text.Trim() + "','" + txtMK.Text.Trim() + "','" + txtSDT.Text.Trim() + "'," + loai.ToString() + ",N'" + _avtpath + "')");
+                    sql.RunSQL(
+                        $"""
+                    insert into NGUOIDUNG values (
+                    '{function.getId("ND")}',
+                    N'{txtHoTen.Text.Trim()}',
+                    N'{txtTenDangNhap.Text.Trim()}',
+                    '{txtMK.Text.Trim()}',
+                    '{txtSDT.Text.Trim()}',
+                    '{txtEmail.Text.Trim()}',
+                    {loai},
+                    N'{_avtpath}'
+                    )
+                    """
+                        );
+                    System.Windows.MessageBox.Show("Tạo thành công");
+                }
+
+                else
+                {
+                    System.Windows.MessageBox.Show("Tên đăng nhập đã tồn tại,\n vui lòng nhập tên khác");
+                }
             }
 
-            else
+            else if (status == 2)
             {
-                System.Windows.MessageBox.Show("Tên đăng nhập đã tồn tại,\n vui lòng nhập tên khác");
+                string temp = "";
+                temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "' and TenDangNhap != N'" + Var.user.Tendangnhap + "'" );
+                if (temp == "")
+                {
+                    sql.RunSQL(
+                        $"""
+                        update NGUOIDUNG set 
+                        HoTen = N'{txtHoTen.Text}',
+                        TenDangNhap = N'{txtTenDangNhap.Text}',
+                        MK = '{txtMK.Text}',
+                        SDT = '{txtSDT.Text}',
+                        Email = '{txtEmail.Text}',
+                        Avt = N'{_avtpath}'
+                        where IdNguoiDung = '{Var.user.ID}'
+                        """
+                        );
+                    System.Windows.MessageBox.Show("Cập nhật thành công");
+                }
+
+                else
+                {
+                    System.Windows.MessageBox.Show("Tên đăng nhập đã tồn tại,\n vui lòng nhập tên khác");
+                }
             }
 
 

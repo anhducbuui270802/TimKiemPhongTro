@@ -46,6 +46,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.btnTaoTaiKhoan = new CustomButton.VBButton();
             this.ptbAvt = new System.Windows.Forms.PictureBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAvt)).BeginInit();
             this.SuspendLayout();
@@ -96,6 +98,7 @@
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(521, 30);
             this.txtHoTen.TabIndex = 4;
+            this.txtHoTen.TabStop = false;
             // 
             // txtTenDangNhap
             // 
@@ -105,6 +108,7 @@
             this.txtTenDangNhap.Name = "txtTenDangNhap";
             this.txtTenDangNhap.Size = new System.Drawing.Size(521, 30);
             this.txtTenDangNhap.TabIndex = 6;
+            this.txtTenDangNhap.TabStop = false;
             // 
             // label5
             // 
@@ -122,7 +126,7 @@
             this.panel1.Controls.Add(this.rdoChinhChu);
             this.panel1.Controls.Add(this.rdoTimKiem);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Location = new System.Drawing.Point(31, 468);
+            this.panel1.Location = new System.Drawing.Point(678, 81);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(521, 75);
             this.panel1.TabIndex = 9;
@@ -183,6 +187,7 @@
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(521, 30);
             this.txtSDT.TabIndex = 8;
+            this.txtSDT.TabStop = false;
             // 
             // txtMK
             // 
@@ -192,6 +197,7 @@
             this.txtMK.Name = "txtMK";
             this.txtMK.Size = new System.Drawing.Size(521, 30);
             this.txtMK.TabIndex = 11;
+            this.txtMK.TabStop = false;
             // 
             // label8
             // 
@@ -209,7 +215,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(916, 106);
+            this.label9.Location = new System.Drawing.Point(834, 194);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(174, 25);
             this.label9.TabIndex = 14;
@@ -238,7 +244,7 @@
             // ptbAvt
             // 
             this.ptbAvt.Image = global::TimKiemPhongTro.Properties.Resources.image_gallery;
-            this.ptbAvt.Location = new System.Drawing.Point(760, 106);
+            this.ptbAvt.Location = new System.Drawing.Point(678, 194);
             this.ptbAvt.Name = "ptbAvt";
             this.ptbAvt.Size = new System.Drawing.Size(150, 150);
             this.ptbAvt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -246,11 +252,34 @@
             this.ptbAvt.TabStop = false;
             this.ptbAvt.Click += new System.EventHandler(this.ptbAvt_Click);
             // 
+            // txtEmail
+            // 
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.DimGray;
+            this.txtEmail.Location = new System.Drawing.Point(31, 478);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(521, 30);
+            this.txtEmail.TabIndex = 18;
+            this.txtEmail.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.Location = new System.Drawing.Point(27, 453);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 25);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "E-Mail";
+            // 
             // DangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1191, 659);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnTaoTaiKhoan);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.ptbAvt);
@@ -298,5 +327,7 @@
         private System.Windows.Forms.PictureBox ptbAvt;
         private System.Windows.Forms.Label label9;
         private CustomButton.VBButton btnTaoTaiKhoan;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Label label10;
     }
 }

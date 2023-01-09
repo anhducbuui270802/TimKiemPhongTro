@@ -29,6 +29,7 @@ namespace TimKiemPhongTro.components
             txtNguoiDang.Text = bd.TenNguoiDung;
             txtSDT.Text = bd.SDT;
             webBrowser.Navigate($"""https://google.com/maps?q={function.LocDau(lbDiaChi.Text)}""");
+
         }
     }
 }

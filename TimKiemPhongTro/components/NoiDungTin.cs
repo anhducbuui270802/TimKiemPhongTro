@@ -18,14 +18,21 @@ namespace TimKiemPhongTro.components
         }
 
         public static string _imagepath = "resource/icon/image.png";
-
+        private List<string> listtinh = sql.GetFieldValuesList("select distinct Tinh from BAIDANG");
+        private List<string> listquan;
+        private List<string> listphuong;
 
         private void NoiDungTin_Load(object sender, EventArgs e)
         {
-            txtDiaChi.Text = txtSoNha.Text + ", " + cbDuongPho.Text + ", " + cbPhuong.Text + ", " + cbQuan.Text + ", " + cbTinh.Text;
             txtThongTinLienHe.Text = Var.user.HoTen.ToString();
             txtSDT.Text = Var.user.SDT.ToString();
             rbNoiDungMoTa.Text = "viet noi dung tai day";
+            listtinh = sql.GetFieldValuesList("select distinct Tinh from BAIDANG");
+            foreach (string tinh in listtinh)
+            {
+                cbTinh.Items.Add(tinh);
+            }
+
         }
         private void btnHoanThanh_Click(object sender, EventArgs e)
         {
@@ -37,7 +44,7 @@ namespace TimKiemPhongTro.components
 
             string sql_statement =
                 $"""
-                insert into BAIDANG (IdBai, IdNguoiDang,ThoiGianDang, Tinh, Quan, Phuong, Pho, SoNha, LoaiBDS, TieuDe, MoTa, GiaPhong, DienTich, HinhAnh) values  (
+                insert into BAIDANG values  (
                 '{function.getId("BD")}', 
                 '{Var.user.ID}',
                 '{DateTime.Now.ToString()}' ,
@@ -51,6 +58,8 @@ namespace TimKiemPhongTro.components
                 N'{rbNoiDungMoTa.Text}',
                 {txtGia.Text} ,
                 {numDientich.Value.ToString()},
+                {1},
+                '{dateTimePicker.Value.ToString()}',
                 N'{_imagepath}'
                 )
                 """;
@@ -73,6 +82,30 @@ namespace TimKiemPhongTro.components
                 _imagepath = path;
                 pictureBox1.Image = Image.FromFile(path);
                 Console.WriteLine(path);
+            }
+        }
+
+        private void txtDiaChi_MouseLeave(object sender, EventArgs e)
+        {
+            txtDiaChi.Text = txtSoNha.Text + ", " + cbDuongPho.Text + ", " + cbPhuong.Text + ", " + cbQuan.Text + ", " + cbTinh.Text;
+
+        }
+
+        private void cbQuan_MouseHover(object sender, EventArgs e)
+        {
+            listquan = sql.GetFieldValuesList($"""select distinct Quan from BAIDANG where Tinh = N'{cbTinh.Text}' """);
+            foreach (string quan in listquan)
+            {
+                cbQuan.Items.Add(quan);
+            }
+        }
+
+        private void cbPhuong_MouseHover(object sender, EventArgs e)
+        {
+            listquan = sql.GetFieldValuesList($"""select distinct Phuong from BAIDANG where Tinh = N'{cbQuan.Text}' """);
+            foreach (string phuong in listphuong)
+            {
+                cbPhuong.Items.Add(phuong);
             }
         }
     }

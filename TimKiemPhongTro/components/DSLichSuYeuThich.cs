@@ -54,6 +54,8 @@ namespace TimKiemPhongTro.components
                         bd.ThoiGian = dr["ThoiGianDang"].ToString();
                         bd.IDBai = dr["IdBai"].ToString();
                         bd.IDNguoiDang = id;
+                        bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
+                        bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
                         YeuThichLichSuItem yeuThichLichSuItem = new YeuThichLichSuItem(0, idbai);
                         yeuThichLichSuItem.Time = "";
                         yeuThichLichSuItem.Controls.Add(bd);
@@ -92,6 +94,8 @@ namespace TimKiemPhongTro.components
                         bd.ThoiGian = dr["ThoiGianDang"].ToString();
                         bd.IDBai = dr["IdBai"].ToString();
                         bd.IDNguoiDang = id;
+                        bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
+                        bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
                         YeuThichLichSuItem yeuThichLichSuItem = new YeuThichLichSuItem(1, idbai);
                         yeuThichLichSuItem.Time = "Thời điểm xem gần nhất:\n" + sql.GetFieldValues("select ThoiGian from LICHSU where IdBai = '" + idbai + "'");
                         yeuThichLichSuItem.Controls.Add(bd);
@@ -123,6 +127,8 @@ namespace TimKiemPhongTro.components
                     bd.ThoiGian = dr["ThoiGianDang"].ToString();
                     bd.IDBai = dr["IdBai"].ToString();
                     bd.IDNguoiDang = id;
+                    bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
+                    bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
                     YeuThichLichSuItem yeuThichLichSuItem = new YeuThichLichSuItem(2, dr["IdBai"].ToString());
                     yeuThichLichSuItem.Time = "Thời gian đăng:\n" + dr["ThoiGianDang"].ToString();
                     yeuThichLichSuItem.Controls.Add(bd);

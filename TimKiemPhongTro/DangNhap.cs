@@ -41,6 +41,7 @@ namespace TimKiemPhongTro
                         Var.user.SDT = dr["SDT"].ToString();
                         Var.user.Loai = int.Parse(dr["Loai"].ToString());
                         Var.user.AVT = dr["Avt"].ToString();
+                        Var.user.Email = dr["Email"].ToString();
                     }
 
                     DialogResult result = MessageBox.Show("Đăng nhập thành công!");
@@ -62,6 +63,36 @@ namespace TimKiemPhongTro
             }
         }
 
+        private void lbQuenMK_Click(object sender, EventArgs e)
+        {
+            if (txtTenDangNhap.Text != "")
+            {
+                string temp = "";
+                temp = sql.GetFieldValues("select TenDangNhap from NGUOIDUNG where TenDangNhap = N'" + txtTenDangNhap.Text + "'");
+                if (temp != "")
+                {
+                    Random rnd = new Random();
+                    string sFrom = "timkiemphongtro247@gmail.com";
+                    string sPassFrom = "xbazjxwpzefenyyk";
+                    string sTo = sql.GetFieldValues($"""select Email from NGUOIDUNG where TenDangNhap = N'{txtTenDangNhap.Text}'""");
+                    string sSubject = "MAT KHAU MOI";
+                    string newPass = rnd.Next(100000, 999999).ToString();
+                    string sBody = "Mật khẩu mới của bạn là: " + newPass;
+                    function.SendPasswordToMail(sFrom, sPassFrom, sTo, sSubject, sBody);
+                    MessageBox.Show("Mật khẩu mới đã được gửi tới " + sTo);
+                    sql.RunSQL("update NGUOIDUNG set MK = '" + newPass + "'");
+                }
+                else
+                {
+                    MessageBox.Show("Không tồn tại người dùng");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nhập tên đăng nhập");
+            }
 
+
+        }
     }
 }

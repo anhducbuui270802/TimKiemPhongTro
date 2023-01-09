@@ -33,11 +33,12 @@ namespace TimKiemPhongTro
 
         public void SetVisible(bool flag)
         {
-            if(flag)
+            if (flag)
             {
                 pnDangNhap.Visible = false;
                 pnYeuThich.Visible = true;
                 pnQuanLy.Visible = true;
+                iconQuanLy.Image = Image.FromFile(Var.user.AVT);
             }
             else
             {
@@ -50,12 +51,12 @@ namespace TimKiemPhongTro
 
         private void btnDangTinMoi_Click(object sender, EventArgs e)
         {
-            if (Var.user.ID != null)
+            if (Var.user.ID != null && Var.user.Loai == 2)
             {
                 DangTinMoi frm = new DangTinMoi();
                 frm.ShowDialog();
             }
-            else MessageBox.Show("Vui lòng đăng nhập trước khi đăng tin mới");
+            else MessageBox.Show("Bạn phải đăng nhập với vai trò là chủ nhà");
         }
 
         private void iconDangNhap_Click(object sender, EventArgs e)
@@ -72,7 +73,7 @@ namespace TimKiemPhongTro
 
         private void icconDangKy_Click(object sender, EventArgs e)
         {
-            DangKy dk = new DangKy();
+            DangKy dk = new DangKy(1);
             dk.ShowDialog();
         }
 
@@ -105,7 +106,7 @@ namespace TimKiemPhongTro
 
         private void iconQuanLy_Click(object sender, EventArgs e)
         {
-            if(panel5.Visible)
+            if (panel5.Visible)
                 panel5.Visible = false;
             else
                 panel5.Visible = true;
@@ -119,7 +120,7 @@ namespace TimKiemPhongTro
                 panel5.Visible = true;
         }
 
-        public void LoadDanhSach (DataTable dt)
+        public void LoadDanhSach(DataTable dt)
         {
             DanhSachTinDang dsTinDang = new DanhSachTinDang(dt);
             searchbar search = new searchbar();
@@ -144,8 +145,6 @@ namespace TimKiemPhongTro
             ChiTietBaiDang chitiet = new ChiTietBaiDang(bd);
             flowLayoutPanel1.Controls.Add(chitiet);
             flowLayoutPanel1.Controls.Add(p);
-
-
         }
 
         private void logo_Click(object sender, EventArgs e)
@@ -174,6 +173,14 @@ namespace TimKiemPhongTro
             flowLayoutPanel1.Controls.Clear();
             DSLichSuYeuThich ds = new DSLichSuYeuThich("Danh sách bài đã đăng", 2);
             flowLayoutPanel1.Controls.Add(ds);
+            panel5.Visible = false;
+        }
+
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
+            DangKy dk = new DangKy(2);
+            dk.ShowDialog();
+            
             panel5.Visible = false;
         }
     }

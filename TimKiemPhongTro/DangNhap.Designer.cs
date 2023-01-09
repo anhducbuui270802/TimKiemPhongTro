@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnDangNhap = new CustomButton.VBButton();
+            this.lbQuenMK = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,11 +108,24 @@
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
+            // lbQuenMK
+            // 
+            this.lbQuenMK.AutoSize = true;
+            this.lbQuenMK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbQuenMK.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbQuenMK.Location = new System.Drawing.Point(228, 328);
+            this.lbQuenMK.Name = "lbQuenMK";
+            this.lbQuenMK.Size = new System.Drawing.Size(96, 16);
+            this.lbQuenMK.TabIndex = 6;
+            this.lbQuenMK.Text = "Quên mật khẩu";
+            this.lbQuenMK.Click += new System.EventHandler(this.lbQuenMK_Click);
+            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 454);
+            this.Controls.Add(this.lbQuenMK);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -121,7 +135,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangNhap";
+            this.Text = "Đăng nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -136,5 +150,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private CustomButton.VBButton btnDangNhap;
+        private System.Windows.Forms.Label lbQuenMK;
     }
 }

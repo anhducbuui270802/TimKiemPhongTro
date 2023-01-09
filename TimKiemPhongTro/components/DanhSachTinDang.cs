@@ -19,7 +19,7 @@ namespace TimKiemPhongTro.components
 
             InitializeComponent();
 
-            dt = sql.GetDataToTable("select * from BAIDANG ");
+            dt = sql.GetDataToTable("select * from BAIDANG where TrangThai = 1");
             foreach (DataRow dr in dt.Rows)
             {
                 baidang bd = new baidang();
@@ -37,6 +37,8 @@ namespace TimKiemPhongTro.components
                 bd.ThoiGian = dr["ThoiGianDang"].ToString();
                 bd.IDBai = dr["IdBai"].ToString();
                 bd.IDNguoiDang = id;
+                bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
+                bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
                 flowLayoutPanel1.Controls.Add(bd);
             }
             flowLayoutPanel1.Height = 270 * dt.Rows.Count + 50;
@@ -63,6 +65,8 @@ namespace TimKiemPhongTro.components
                 bd.ThoiGian = dr["ThoiGianDang"].ToString();
                 bd.IDBai = dr["IdBai"].ToString();
                 bd.IDNguoiDang = id;
+                bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
+                bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
                 flowLayoutPanel1.Controls.Add(bd);
             }
             flowLayoutPanel1.Height = 270 * dt.Rows.Count + 50;

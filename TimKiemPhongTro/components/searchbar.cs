@@ -20,7 +20,7 @@ namespace TimKiemPhongTro.components
         public static string loaibds, tinh, gia, dientich;
         public static bool flag = false;
 
-        private List<string> listtinh = sql.GetFieldValuesList("select Tinh from BAIDANG");
+        private List<string> listtinh = sql.GetFieldValuesList("select distinct Tinh from BAIDANG");
 
         //private int index_gia;
         //private int index_dientich;
@@ -63,7 +63,7 @@ namespace TimKiemPhongTro.components
                 switch (cbGia.SelectedIndex)
                 {
                     case 0:
-                        gia = "GiaPhong <= 1,";
+                        gia = "GiaPhong <= 1";
                         break;
                     case 1:
                         gia = "GiaPhong >= 1 and GiaPhong <= 2 and";
@@ -121,7 +121,6 @@ namespace TimKiemPhongTro.components
                         dientich = $"""DienTich >= {float.Parse(cbDienTich.Text) - 10} and DienTich <= {float.Parse(cbDienTich.Text) + 10} and""";
                         break;
                 }
-
                 flag = true;
             }
         }
@@ -132,7 +131,7 @@ namespace TimKiemPhongTro.components
             {
                 string sql_statement =
                 $"""
-                select * from BAIDANG where {loaibds} {tinh} {gia} {dientich} GiaPhong > 0
+                select * from BAIDANG where {loaibds} {tinh} {gia} {dientich} TrangThai = 1
                 """;
                 DanhSachTinDang.dt = sql.GetDataToTable(sql_statement);
 
@@ -141,7 +140,7 @@ namespace TimKiemPhongTro.components
             {
                 string sql_statement =
                 $"""
-                select * from BAIDANG
+                select * from BAIDANG where TrangThai = 1
                 """;
                 DanhSachTinDang.dt = sql.GetDataToTable(sql_statement);
             }
@@ -159,9 +158,8 @@ namespace TimKiemPhongTro.components
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             query_search();
-            search();
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-            trangchu.LoadDanhSach(DanhSachTinDang.dt);
+            trangchu.LoadDanhSach(search());
         }
 
         public static void setgia(int index)
@@ -195,9 +193,8 @@ namespace TimKiemPhongTro.components
                
             }
             flag = true;
-            search();
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-            trangchu.LoadDanhSach(DanhSachTinDang.dt);
+            trangchu.LoadDanhSach(search());
         }
 
         public static void setdientich(int index)

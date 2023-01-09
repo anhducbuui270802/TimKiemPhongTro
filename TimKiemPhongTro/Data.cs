@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Drawing.Printing;
 using System.Drawing;
 using System.ComponentModel;
+using System.Windows.Navigation;
 
 namespace TimKiemPhongTro
 {
@@ -98,7 +99,7 @@ namespace TimKiemPhongTro
         private string _sdt;
         private int _loai;
         private string _avt;
-        private string _zalo;
+        private string _email;
 
         public string ID
         {
@@ -142,10 +143,10 @@ namespace TimKiemPhongTro
             set { _avt = value; }
         }
 
-        public string ZALO
+        public string Email
         {
-            get { return _zalo; }
-            set { _zalo = value; }
+            get { return _email; }
+            set { _email = value; }
         }
     }
 
@@ -256,6 +257,28 @@ namespace TimKiemPhongTro
                     str = str.Replace(VietNamChar[i][j], VietNamChar[0][i - 1]);
             }
             return str;
+        }
+
+        public static void SendPasswordToMail(string sFrom, string sPass, string sTo, string sSubject, string sBody)
+        {
+            try
+            {
+                var client = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new System.Net.NetworkCredential(sFrom, sPass),
+                    EnableSsl = true
+                };
+                var message = new System.Net.Mail.MailMessage(sFrom, sTo, sSubject, sBody);
+                message.IsBodyHtml = true;
+                client.Host = "smtp.gmail.com";
+                client.Send(message);
+                client.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
         }
     }
 }

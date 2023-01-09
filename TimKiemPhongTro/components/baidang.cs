@@ -30,8 +30,24 @@ namespace TimKiemPhongTro.components
         private Image _imguser;
         private string _iduser;
         private string _idbai;
+        private int _trangthai;
+        private string _thoigianhethan;
 
 
+        [Category("Custom Props")]
+        public int TrangThai
+        {
+            get { return _trangthai; }
+            set { _trangthai = value; }
+        }
+
+
+        [Category("Custom Props")]
+        public string ThoiGianHetHan
+        {
+            get { return _thoigianhethan; }
+            set { _thoigianhethan = value; }
+        }
 
         [Category("Custom Props")]
         public string IDBai

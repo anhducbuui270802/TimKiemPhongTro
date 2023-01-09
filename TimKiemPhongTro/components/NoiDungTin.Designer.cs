@@ -65,6 +65,8 @@
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHoanThanh = new CustomButton.VBButton();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDientich)).BeginInit();
@@ -124,6 +126,7 @@
             this.txtDiaChi.Size = new System.Drawing.Size(747, 28);
             this.txtDiaChi.TabIndex = 11;
             this.txtDiaChi.TabStop = false;
+            this.txtDiaChi.MouseLeave += new System.EventHandler(this.txtDiaChi_MouseLeave);
             // 
             // label7
             // 
@@ -205,6 +208,7 @@
             this.cbPhuong.Name = "cbPhuong";
             this.cbPhuong.Size = new System.Drawing.Size(156, 29);
             this.cbPhuong.TabIndex = 3;
+            this.cbPhuong.MouseHover += new System.EventHandler(this.cbPhuong_MouseHover);
             // 
             // cbQuan
             // 
@@ -214,6 +218,7 @@
             this.cbQuan.Name = "cbQuan";
             this.cbQuan.Size = new System.Drawing.Size(156, 29);
             this.cbQuan.TabIndex = 2;
+            this.cbQuan.MouseHover += new System.EventHandler(this.cbQuan_MouseHover);
             // 
             // cbTinh
             // 
@@ -478,7 +483,7 @@
             this.btnHoanThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoanThanh.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoanThanh.ForeColor = System.Drawing.Color.White;
-            this.btnHoanThanh.Location = new System.Drawing.Point(624, 1582);
+            this.btnHoanThanh.Location = new System.Drawing.Point(621, 1732);
             this.btnHoanThanh.Name = "btnHoanThanh";
             this.btnHoanThanh.Size = new System.Drawing.Size(150, 40);
             this.btnHoanThanh.TabIndex = 27;
@@ -487,11 +492,33 @@
             this.btnHoanThanh.UseVisualStyleBackColor = false;
             this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
             // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Font = new System.Drawing.Font("Calibri", 10.2F);
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker.Location = new System.Drawing.Point(7, 1608);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(153, 28);
+            this.dateTimePicker.TabIndex = 28;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
+            this.label20.Location = new System.Drawing.Point(4, 1584);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(133, 21);
+            this.label20.TabIndex = 30;
+            this.label20.Text = "Thời gian hết hạn";
+            // 
             // NoiDungTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.btnHoanThanh);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label18);
@@ -511,7 +538,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Name = "NoiDungTin";
-            this.Size = new System.Drawing.Size(780, 1652);
+            this.Size = new System.Drawing.Size(780, 1787);
             this.Load += new System.EventHandler(this.NoiDungTin_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -563,5 +590,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox1;
         private CustomButton.VBButton btnHoanThanh;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Label label20;
     }
 }
