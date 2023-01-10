@@ -67,7 +67,8 @@
             this.cbTinh.Size = new System.Drawing.Size(210, 28);
             this.cbTinh.TabIndex = 1;
             this.cbTinh.TabStop = false;
-            this.cbTinh.Text = "Chọn tỉnh thành";
+            this.cbTinh.Text = "Chọn địa chỉ";
+            this.cbTinh.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cbTinh_MouseClick);
             // 
             // cbGia
             // 
@@ -142,7 +143,6 @@
             this.Controls.Add(this.cbLoaiBDS);
             this.Name = "searchbar";
             this.Size = new System.Drawing.Size(1138, 52);
-            this.Load += new System.EventHandler(this.searchbar_Load);
             this.ResumeLayout(false);
 
         }

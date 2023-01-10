@@ -50,3 +50,4 @@ D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.GenerateReso
 D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.CoreCompileInputs.cache
 D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.exe
 D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.pdb
+D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.ChonDiaChi.resources

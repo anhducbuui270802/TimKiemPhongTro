@@ -17,25 +17,16 @@ namespace TimKiemPhongTro.components
             InitializeComponent();
         }
 
-        public static string loaibds, tinh, gia, dientich;
+        public static string loaibds, tinh, quan, phuong, gia, dientich;
+        public static StringBuilder diachi = new StringBuilder();
+        
         public static bool flag = false;
 
-        private List<string> listtinh = sql.GetFieldValuesList("select distinct Tinh from BAIDANG");
-
-        //private int index_gia;
-        //private int index_dientich;
-
-        //public int IndexGia
-        //{
-        //    get { return index_gia; }   
-        //    set { index_gia = value; cbGia.SelectedIndex = value; }  
-        //}
-
-        //public int IndexDientich
-        //{
-        //    get { return index_dientich; }
-        //    set { index_dientich = value; }
-        //}
+        private void cbTinh_MouseClick(object sender, MouseEventArgs e)
+        {
+            ChonDiaChi chonDiaChi = new ChonDiaChi();
+            chonDiaChi.ShowDialog();
+        }
 
         private void query_search()
         {
@@ -45,14 +36,6 @@ namespace TimKiemPhongTro.components
             else
             {
                 loaibds = "LoaiBDS = N'" + cbLoaiBDS.Text + "' and";
-                flag = true;
-            }
-
-            if (cbTinh.Text == "Chọn tỉnh thành")
-            { tinh = ""; }
-            else
-            {
-                tinh = "Tinh = N'" + cbTinh.Text + "' and";
                 flag = true;
             }
 
@@ -131,10 +114,9 @@ namespace TimKiemPhongTro.components
             {
                 string sql_statement =
                 $"""
-                select * from BAIDANG where {loaibds} {tinh} {gia} {dientich} TrangThai = 1
+                select * from BAIDANG where {loaibds} {tinh} {quan} {phuong} {gia} {dientich} TrangThai = 1
                 """;
                 DanhSachTinDang.dt = sql.GetDataToTable(sql_statement);
-
             }
             else
             {
@@ -145,14 +127,6 @@ namespace TimKiemPhongTro.components
                 DanhSachTinDang.dt = sql.GetDataToTable(sql_statement);
             }
             return DanhSachTinDang.dt;
-        }
-
-        private void searchbar_Load(object sender, EventArgs e)
-        {
-            foreach (string tinh in listtinh)
-            {
-                cbTinh.Items.Add(tinh);
-            }
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
@@ -225,5 +199,7 @@ namespace TimKiemPhongTro.components
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
             trangchu.LoadDanhSach(search());
         }
+
+        
     }
 }

@@ -19,12 +19,22 @@ namespace TimKiemPhongTro.components
 
             InitializeComponent();
 
-            dt = sql.GetDataToTable("select * from BAIDANG where TrangThai = 1");
-            foreach (DataRow dr in dt.Rows)
+            dt = sql.GetDataToTable("select * from BAIDANG");
+            foreach (DataRow dr in dt.Rows) 
             {
-                baidang bd = new baidang();
-                function.setValueBaiDang(dr, ref bd);
-                flowLayoutPanel1.Controls.Add(bd);
+                if (DateTime.Now > Convert.ToDateTime(dr["ThoiGianHetHan"]))
+                {
+                    sql.RunSQL($"""update BAIDANG set TrangThai = 3 where IdBai = '{dr["IdBai"]}'""");
+                }
+                else
+                {
+                    if (dr["TrangThai"].ToString() == "1")
+                    {
+                        baidang bd = new baidang();
+                        function.setValueBaiDang(dr, ref bd);
+                        flowLayoutPanel1.Controls.Add(bd);
+                    }
+                }
             }
             flowLayoutPanel1.Height = 270 * dt.Rows.Count + 50;
             this.Height = flowLayoutPanel1.Height + 150;

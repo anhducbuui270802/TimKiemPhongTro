@@ -70,6 +70,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChonDiaChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonDiaChi.Designer.cs">
+      <DependentUpon>ChonDiaChi.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\binhluan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     <Compile Include="VBButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="ChonDiaChi.resx">
+      <DependentUpon>ChonDiaChi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\binhluan.resx">
       <DependentUpon>binhluan.cs</DependentUpon>
     </EmbeddedResource>

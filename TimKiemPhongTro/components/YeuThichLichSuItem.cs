@@ -26,8 +26,6 @@ namespace TimKiemPhongTro.components
             this.trangthai = int.Parse(sql.GetFieldValues($"""select TrangThai from BAIDANG where IdBai = '{id}'"""));
             this.status = status;
             IdBai = id;
-            Console.WriteLine(trangthai);
-            Console.WriteLine(id);
 
             if (status == 2)
             {
@@ -43,7 +41,6 @@ namespace TimKiemPhongTro.components
         }
 
         private string _time;
-        //private baidang _baidang;
 
         [Category("Custom Props")]
         public string Time
@@ -91,9 +88,21 @@ namespace TimKiemPhongTro.components
         //trang thai = 3: bai dang bi khoa boi admin
         private void ptbHiden_Click(object sender, EventArgs e)
         {
-            sql.RunSQL($"""update BAIDANG set TrangThai = 1 where IdBai = '{IdBai}'""");
-            ptbUnhide.Visible = true;
-            ptbHiden.Visible = false;
+            if (Var.user.Loai == 2 && trangthai != 3)
+            {
+                sql.RunSQL($"""update BAIDANG set TrangThai = 1 where IdBai = '{IdBai}'""");
+                ptbUnhide.Visible = true;
+                ptbHiden.Visible = false;
+
+            }
+            else if (Var.user.Loai == 3)
+            {
+                sql.RunSQL($"""update BAIDANG set TrangThai = 1 where IdBai = '{IdBai}'""");
+                ptbUnhide.Visible = true;
+                ptbHiden.Visible = false;
+
+            }
+            
         }
 
         private void ptbUnhide_Click(object sender, EventArgs e)
@@ -101,21 +110,17 @@ namespace TimKiemPhongTro.components
             if (Var.user.Loai == 2)
             {
                 sql.RunSQL($"""update BAIDANG set TrangThai = 2 where IdBai = '{IdBai}'""");
+                ptbUnhide.Visible = false;
+                ptbHiden.Visible = true;
             }
             else if (Var.user.Loai == 3)
             {
                 sql.RunSQL($"""update BAIDANG set TrangThai = 3 where IdBai = '{IdBai}'""");
+                ptbUnhide.Visible = false;
+                ptbHiden.Visible = true;
             }
-            ptbUnhide.Visible = false;
-            ptbHiden.Visible = true;
+           
         }
-
-        //[Category("Custom Props")]
-        //public baidang BaiDang
-        //{
-        //    get { return _baidang; }
-        //    set { _baidang = value; baidang = value; }
-        //}
 
     }
 }

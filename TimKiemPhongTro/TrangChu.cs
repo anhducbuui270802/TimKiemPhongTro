@@ -21,6 +21,7 @@ namespace TimKiemPhongTro
             flowLayoutPanel1.Controls.Add(ds);
         }
 
+
         private void TrangChu_Load(object sender, EventArgs e)
         {
             DanhSachTinDang dsTinDang = new DanhSachTinDang();

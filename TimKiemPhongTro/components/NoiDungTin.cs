@@ -81,7 +81,7 @@ namespace TimKiemPhongTro.components
                 path = open.FileName.Replace(Var.currentDir + @"\", "").Replace(@"\", "/");
                 _imagepath = path;
                 pictureBox1.Image = Image.FromFile(path);
-                Console.WriteLine(path);
+                //Console.WriteLine(path);
             }
         }
 
@@ -102,7 +102,7 @@ namespace TimKiemPhongTro.components
 
         private void cbPhuong_MouseHover(object sender, EventArgs e)
         {
-            listquan = sql.GetFieldValuesList($"""select distinct Phuong from BAIDANG where Tinh = N'{cbQuan.Text}' """);
+            listphuong = sql.GetFieldValuesList($"""select distinct Phuong from BAIDANG where Quan = N'{cbQuan.Text}' """);
             foreach (string phuong in listphuong)
             {
                 cbPhuong.Items.Add(phuong);
