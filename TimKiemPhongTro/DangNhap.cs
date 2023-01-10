@@ -49,6 +49,7 @@ namespace TimKiemPhongTro
                     {
                         var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
                         trangchu.SetVisible(true);
+                        trangchu.loadBtn();
                         this.Close();
                     }
                 }
@@ -61,6 +62,7 @@ namespace TimKiemPhongTro
             {
                 MessageBox.Show("Tài khoản không tồn tại");
             }
+
         }
 
         private void lbQuenMK_Click(object sender, EventArgs e)

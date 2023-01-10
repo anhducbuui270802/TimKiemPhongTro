@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lbThoiGian = new System.Windows.Forms.Label();
+            this.btnWarning = new CustomButton.VBButton();
             this.ptbUnhide = new System.Windows.Forms.PictureBox();
             this.ptbHiden = new System.Windows.Forms.PictureBox();
             this.ptbDelete = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,27 @@
             this.lbThoiGian.Size = new System.Drawing.Size(144, 54);
             this.lbThoiGian.TabIndex = 1;
             this.lbThoiGian.Text = "12:12:12pm  27/12/2022";
+            // 
+            // btnWarning
+            // 
+            this.btnWarning.BackColor = System.Drawing.Color.Salmon;
+            this.btnWarning.BackgroundColor = System.Drawing.Color.Salmon;
+            this.btnWarning.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnWarning.BorderRadius = 8;
+            this.btnWarning.BorderSize = 0;
+            this.btnWarning.FlatAppearance.BorderSize = 0;
+            this.btnWarning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWarning.ForeColor = System.Drawing.Color.Black;
+            this.btnWarning.Location = new System.Drawing.Point(739, 167);
+            this.btnWarning.Name = "btnWarning";
+            this.btnWarning.Size = new System.Drawing.Size(150, 40);
+            this.btnWarning.TabIndex = 5;
+            this.btnWarning.Text = "Bài đăng hết hạn";
+            this.btnWarning.TextColor = System.Drawing.Color.Black;
+            this.btnWarning.UseVisualStyleBackColor = false;
+            this.btnWarning.Visible = false;
+            this.btnWarning.Click += new System.EventHandler(this.btnWarning_Click);
             // 
             // ptbUnhide
             // 
@@ -95,6 +117,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
+            this.Controls.Add(this.btnWarning);
             this.Controls.Add(this.ptbUnhide);
             this.Controls.Add(this.ptbHiden);
             this.Controls.Add(this.ptbDelete);
@@ -113,5 +136,6 @@
         private System.Windows.Forms.PictureBox ptbDelete;
         private System.Windows.Forms.PictureBox ptbHiden;
         private System.Windows.Forms.PictureBox ptbUnhide;
+        private CustomButton.VBButton btnWarning;
     }
 }

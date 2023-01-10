@@ -76,6 +76,12 @@
     <Compile Include="ChonDiaChi.Designer.cs">
       <DependentUpon>ChonDiaChi.cs</DependentUpon>
     </Compile>
+    <Compile Include="components\baidang_quanly_item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\baidang_quanly_item.Designer.cs">
+      <DependentUpon>baidang_quanly_item.cs</DependentUpon>
+    </Compile>
     <Compile Include="components\binhluan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="components\cmt.Designer.cs">
       <DependentUpon>cmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="components\dsbaidang_quanly.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="components\dsbaidang_quanly.Designer.cs">
+      <DependentUpon>dsbaidang_quanly.cs</DependentUpon>
     </Compile>
     <Compile Include="components\DSLichSuYeuThich.cs">
       <SubType>UserControl</SubType>
@@ -167,6 +179,12 @@
       <DependentUpon>DangTinMoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Data.cs" />
+    <Compile Include="GiaHan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaHan.Designer.cs">
+      <DependentUpon>GiaHan.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,11 +199,17 @@
     <EmbeddedResource Include="ChonDiaChi.resx">
       <DependentUpon>ChonDiaChi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="components\baidang_quanly_item.resx">
+      <DependentUpon>baidang_quanly_item.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="components\binhluan.resx">
       <DependentUpon>binhluan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\cmt.resx">
       <DependentUpon>cmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="components\dsbaidang_quanly.resx">
+      <DependentUpon>dsbaidang_quanly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="components\DSLichSuYeuThich.resx">
       <DependentUpon>DSLichSuYeuThich.cs</DependentUpon>
@@ -225,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangTinMoi.resx">
       <DependentUpon>DangTinMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaHan.resx">
+      <DependentUpon>GiaHan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>

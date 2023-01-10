@@ -51,3 +51,9 @@ D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.csproj.CoreCompileI
 D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.exe
 D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.pdb
 D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.ChonDiaChi.resources
+D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.baidang_quanly_item.resources
+D:\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.dsbaidang_quanly.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.ChonDiaChi.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.baidang_quanly_item.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.components.dsbaidang_quanly.resources
+D:\UIT\Nam3_Ky1\c#\TimKiemPhongTro\TimKiemPhongTro\obj\Debug\TimKiemPhongTro.GiaHan.resources

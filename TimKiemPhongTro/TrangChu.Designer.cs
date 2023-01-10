@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuanLyBaiDang = new CustomButton.VBButton();
             this.pnDangNhap = new System.Windows.Forms.Panel();
             this.lbDangNhap = new System.Windows.Forms.Label();
             this.iconDangNhap = new System.Windows.Forms.PictureBox();
@@ -44,6 +45,7 @@
             this.btnDangTinMoi = new CustomButton.VBButton();
             this.logo = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnThongTin = new CustomButton.VBButton();
             this.btnBaiDaDang = new CustomButton.VBButton();
             this.btnDangxuat = new CustomButton.VBButton();
             this.btnLichSu = new CustomButton.VBButton();
@@ -51,7 +53,6 @@
             this.xemTheoGia1 = new TimKiemPhongTro.components.XemTheoGia();
             this.xemTheoDienTich1 = new TimKiemPhongTro.components.XemTheoDienTich();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnThongTin = new CustomButton.VBButton();
             this.panel1.SuspendLayout();
             this.pnDangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconDangNhap)).BeginInit();
@@ -70,6 +71,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnQuanLyBaiDang);
             this.panel1.Controls.Add(this.pnDangNhap);
             this.panel1.Controls.Add(this.pnDangKy);
             this.panel1.Controls.Add(this.pnQuanLy);
@@ -81,6 +83,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1522, 70);
             this.panel1.TabIndex = 0;
+            // 
+            // btnQuanLyBaiDang
+            // 
+            this.btnQuanLyBaiDang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuanLyBaiDang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
+            this.btnQuanLyBaiDang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(56)))), ((int)(((byte)(89)))));
+            this.btnQuanLyBaiDang.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnQuanLyBaiDang.BorderRadius = 10;
+            this.btnQuanLyBaiDang.BorderSize = 0;
+            this.btnQuanLyBaiDang.FlatAppearance.BorderSize = 0;
+            this.btnQuanLyBaiDang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLyBaiDang.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLyBaiDang.ForeColor = System.Drawing.Color.White;
+            this.btnQuanLyBaiDang.Location = new System.Drawing.Point(1190, 15);
+            this.btnQuanLyBaiDang.Name = "btnQuanLyBaiDang";
+            this.btnQuanLyBaiDang.Size = new System.Drawing.Size(171, 40);
+            this.btnQuanLyBaiDang.TabIndex = 4;
+            this.btnQuanLyBaiDang.Text = "Quản lý bài đăng";
+            this.btnQuanLyBaiDang.TextColor = System.Drawing.Color.White;
+            this.btnQuanLyBaiDang.UseVisualStyleBackColor = false;
+            this.btnQuanLyBaiDang.Visible = false;
+            this.btnQuanLyBaiDang.Click += new System.EventHandler(this.btnQuanLyBaiDang_Click);
             // 
             // pnDangNhap
             // 
@@ -247,6 +271,7 @@
             this.btnDangTinMoi.Text = "Đăng tin mới";
             this.btnDangTinMoi.TextColor = System.Drawing.Color.White;
             this.btnDangTinMoi.UseVisualStyleBackColor = false;
+            this.btnDangTinMoi.Visible = false;
             this.btnDangTinMoi.Click += new System.EventHandler(this.btnDangTinMoi_Click);
             // 
             // logo
@@ -273,6 +298,26 @@
             this.panel5.Size = new System.Drawing.Size(138, 174);
             this.panel5.TabIndex = 3;
             this.panel5.Visible = false;
+            // 
+            // btnThongTin
+            // 
+            this.btnThongTin.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnThongTin.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnThongTin.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnThongTin.BorderRadius = 10;
+            this.btnThongTin.BorderSize = 0;
+            this.btnThongTin.FlatAppearance.BorderSize = 0;
+            this.btnThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTin.ForeColor = System.Drawing.Color.White;
+            this.btnThongTin.Location = new System.Drawing.Point(3, 82);
+            this.btnThongTin.Name = "btnThongTin";
+            this.btnThongTin.Size = new System.Drawing.Size(132, 34);
+            this.btnThongTin.TabIndex = 3;
+            this.btnThongTin.Text = "Thông tin";
+            this.btnThongTin.TextColor = System.Drawing.Color.White;
+            this.btnThongTin.UseVisualStyleBackColor = false;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // btnBaiDaDang
             // 
@@ -371,26 +416,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1176, 865);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // btnThongTin
-            // 
-            this.btnThongTin.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnThongTin.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnThongTin.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnThongTin.BorderRadius = 10;
-            this.btnThongTin.BorderSize = 0;
-            this.btnThongTin.FlatAppearance.BorderSize = 0;
-            this.btnThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTin.ForeColor = System.Drawing.Color.White;
-            this.btnThongTin.Location = new System.Drawing.Point(3, 82);
-            this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.Size = new System.Drawing.Size(132, 34);
-            this.btnThongTin.TabIndex = 3;
-            this.btnThongTin.Text = "Thông tin";
-            this.btnThongTin.TextColor = System.Drawing.Color.White;
-            this.btnThongTin.UseVisualStyleBackColor = false;
-            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
-            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -451,6 +476,7 @@
         private CustomButton.VBButton btnLichSu;
         private CustomButton.VBButton btnBaiDaDang;
         private CustomButton.VBButton btnThongTin;
+        private CustomButton.VBButton btnQuanLyBaiDang;
     }
 }
 

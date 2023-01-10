@@ -30,6 +30,7 @@ namespace TimKiemPhongTro
             flowLayoutPanel1.Controls.Add(search);
             flowLayoutPanel1.Controls.Add(dsTinDang);
             flowLayoutPanel1.Controls.Add(panel3);
+        
         }
 
         public void SetVisible(bool flag)
@@ -52,12 +53,15 @@ namespace TimKiemPhongTro
 
         private void btnDangTinMoi_Click(object sender, EventArgs e)
         {
-            if (Var.user.ID != null && Var.user.Loai == 2)
-            {
-                DangTinMoi frm = new DangTinMoi();
-                frm.ShowDialog();
-            }
-            else MessageBox.Show("Bạn phải đăng nhập với vai trò là chủ nhà");
+            //if (Var.user.ID != null && Var.user.Loai == 2)
+            //{
+            //    DangTinMoi frm = new DangTinMoi();
+            //    frm.ShowDialog();
+            //}
+            //else MessageBox.Show("Bạn phải đăng nhập với vai trò là chủ nhà");
+
+            DangTinMoi frm = new DangTinMoi();
+            frm.ShowDialog();
         }
 
         private void iconDangNhap_Click(object sender, EventArgs e)
@@ -157,6 +161,8 @@ namespace TimKiemPhongTro
         {
             Var.user = new User();
             panel5.Visible = false;
+            btnQuanLyBaiDang.Visible = false;
+            btnDangTinMoi.Visible = false;
             SetVisible(false);
             TrangChu_Load(sender, e);
         }
@@ -181,8 +187,44 @@ namespace TimKiemPhongTro
         {
             DangKy dk = new DangKy(2);
             dk.ShowDialog();
-            
             panel5.Visible = false;
+        }
+
+        public void loadBtn()
+        {
+            if (Var.user.Loai == 3)
+            {
+                btnQuanLyBaiDang.Visible = true;
+                btnDangTinMoi.Visible = false;
+            }
+            else if (Var.user.Loai == 2)
+            {
+                btnDangTinMoi.Visible = true;
+                btnQuanLyBaiDang.Visible = false;
+            }
+            else if (Var.user.Loai == 1)
+            {
+                btnDangTinMoi.Visible = false;
+                btnQuanLyBaiDang.Visible = false;
+            }
+        }
+
+        private void btnQuanLyBaiDang_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            searchbar searchbar = new searchbar();  
+            dsbaidang_quanly ds = new dsbaidang_quanly();
+            flowLayoutPanel1.Controls.Add(searchbar);
+            flowLayoutPanel1.Controls.Add(ds);
+        }
+
+        public void QuanLyBai_Load()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            searchbar searchbar = new searchbar();
+            dsbaidang_quanly ds = new dsbaidang_quanly();
+            flowLayoutPanel1.Controls.Add(searchbar);
+            flowLayoutPanel1.Controls.Add(ds);
         }
     }
 }

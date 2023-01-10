@@ -18,14 +18,24 @@ namespace TimKiemPhongTro.components
         }
 
         public static string loaibds, tinh, quan, phuong, gia, dientich;
-        public static StringBuilder diachi = new StringBuilder();
-        
         public static bool flag = false;
+
+        //private static StringBuilder diachi = new StringBuilder();
+        //public static StringBuilder DiaChi
+        //{
+        //    get { return diachi; }  
+        //    set { diachi = value; cbTinh.Text = value.ToString(); }
+        //}
 
         private void cbTinh_MouseClick(object sender, MouseEventArgs e)
         {
             ChonDiaChi chonDiaChi = new ChonDiaChi();
             chonDiaChi.ShowDialog();
+        }
+
+        private void searchbar_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void query_search()

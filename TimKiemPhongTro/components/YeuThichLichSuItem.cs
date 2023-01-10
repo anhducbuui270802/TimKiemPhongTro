@@ -37,6 +37,12 @@ namespace TimKiemPhongTro.components
                 {
                     ptbHiden.Visible = true;
                 }
+
+                DateTime ngayhethan = Convert.ToDateTime(sql.GetFieldValues($"""select ThoiGianHetHan from BAIDANG where IdBai = '{id}'"""));
+                if(trangthai == 3 && ngayhethan < DateTime.Now && Var.user.Loai == 2)
+                {
+                    btnWarning.Visible = true;
+                }    
             }
         }
 
@@ -73,13 +79,20 @@ namespace TimKiemPhongTro.components
             }
             else if (status == 2)
             {
-                sql.RunSQL(
+                DialogResult result = MessageBox.Show("Bạn có muốn xoá bái đăng", "Xoá bài đăng" , MessageBoxButtons.OKCancel);
+                if (result == DialogResult.OK)
+                {
+                    sql.RunSQL(
                     $"""
-                    delete from BAIDANG where IdBai = '{IdBai}' and IdNguoiDang = '{Var.user.ID}'
+                    delete from BAIDANG where IdBai = '{IdBai}'
                     """
                     );
+                }
                 var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
-                trangchu.YeuThich_LichSu_Load("Danh sách bài đã đăng", 2);
+                if(Var.user.Loai ==2)
+                { trangchu.YeuThich_LichSu_Load("Danh sách bài đã đăng", 2); }
+                else if (Var.user.Loai ==3)
+                { trangchu.QuanLyBai_Load(); }
             }
         }
 
@@ -122,5 +135,10 @@ namespace TimKiemPhongTro.components
            
         }
 
+        private void btnWarning_Click(object sender, EventArgs e)
+        {
+            GiaHan gh = new GiaHan(IdBai);
+            gh.ShowDialog();
+        }
     }
 }
