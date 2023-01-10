@@ -50,6 +50,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.webBrowser = new System.Windows.Forms.WebBrowser();
+            this.lbChuyenMuc = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -75,22 +77,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.label1.Location = new System.Drawing.Point(5, 425);
+            this.label1.Location = new System.Drawing.Point(4, 457);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 18);
+            this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Địa chỉ: ";
             // 
             // lbDiaChi
             // 
             this.lbDiaChi.AutoSize = true;
-            this.lbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
-            this.lbDiaChi.Location = new System.Drawing.Point(64, 425);
+            this.lbDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDiaChi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(199)))), ((int)(((byte)(132)))));
+            this.lbDiaChi.Location = new System.Drawing.Point(63, 457);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(461, 18);
+            this.lbDiaChi.Size = new System.Drawing.Size(520, 20);
             this.lbDiaChi.TabIndex = 3;
             this.lbDiaChi.Text = "71 Đường Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7, Hồ Chí Minh";
             // 
@@ -122,7 +124,7 @@
             // 
             this.panel1.Controls.Add(this.lbGiaPhong);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(8, 479);
+            this.panel1.Location = new System.Drawing.Point(8, 500);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 35);
             this.panel1.TabIndex = 6;
@@ -142,7 +144,7 @@
             // 
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.lbDienTich);
-            this.panel2.Location = new System.Drawing.Point(305, 479);
+            this.panel2.Location = new System.Drawing.Point(301, 500);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(115, 35);
             this.panel2.TabIndex = 7;
@@ -162,7 +164,7 @@
             // 
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.lbThoiGian);
-            this.panel3.Location = new System.Drawing.Point(458, 479);
+            this.panel3.Location = new System.Drawing.Point(457, 500);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(296, 35);
             this.panel3.TabIndex = 8;
@@ -299,10 +301,34 @@
             this.webBrowser.Size = new System.Drawing.Size(753, 431);
             this.webBrowser.TabIndex = 12;
             // 
+            // lbChuyenMuc
+            // 
+            this.lbChuyenMuc.AutoSize = true;
+            this.lbChuyenMuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChuyenMuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
+            this.lbChuyenMuc.Location = new System.Drawing.Point(105, 428);
+            this.lbChuyenMuc.Name = "lbChuyenMuc";
+            this.lbChuyenMuc.Size = new System.Drawing.Size(461, 18);
+            this.lbChuyenMuc.TabIndex = 14;
+            this.lbChuyenMuc.Text = "71 Đường Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7, Hồ Chí Minh";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(3)))), ((int)(((byte)(51)))));
+            this.label7.Location = new System.Drawing.Point(4, 428);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 18);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Chuyên mục:";
+            // 
             // ChiTietBaiDang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbChuyenMuc);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.webBrowser);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.txtThongTinMoTa);
@@ -358,5 +384,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.WebBrowser webBrowser;
+        private System.Windows.Forms.Label lbChuyenMuc;
+        private System.Windows.Forms.Label label7;
     }
 }

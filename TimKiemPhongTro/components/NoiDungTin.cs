@@ -26,7 +26,6 @@ namespace TimKiemPhongTro.components
         {
             txtThongTinLienHe.Text = Var.user.HoTen.ToString();
             txtSDT.Text = Var.user.SDT.ToString();
-            rbNoiDungMoTa.Text = "viet noi dung tai day";
             listtinh = sql.GetFieldValuesList("select distinct Tinh from BAIDANG");
             foreach (string tinh in listtinh)
             {
@@ -54,8 +53,8 @@ namespace TimKiemPhongTro.components
                 N'{cbDuongPho.Text}',
                 N'{txtSoNha.Text}',
                 N'{cbLoaiBDS.Text}',
-                N'{txtTieuDe.Text}',
-                N'{rbNoiDungMoTa.Text}',
+                N'{txtTieuDe.Text.Replace("'","")}',
+                N'{rbNoiDungMoTa.Text.Replace("'", "")}',
                 {txtGia.Text} ,
                 {numDientich.Value.ToString()},
                 {1},
@@ -93,6 +92,7 @@ namespace TimKiemPhongTro.components
 
         private void cbQuan_MouseHover(object sender, EventArgs e)
         {
+            cbQuan.Items.Clear();
             listquan = sql.GetFieldValuesList($"""select distinct Quan from BAIDANG where Tinh = N'{cbTinh.Text}' """);
             foreach (string quan in listquan)
             {
@@ -102,6 +102,7 @@ namespace TimKiemPhongTro.components
 
         private void cbPhuong_MouseHover(object sender, EventArgs e)
         {
+            cbPhuong.Items.Clear();
             listphuong = sql.GetFieldValuesList($"""select distinct Phuong from BAIDANG where Quan = N'{cbQuan.Text}' """);
             foreach (string phuong in listphuong)
             {

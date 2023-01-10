@@ -46,7 +46,6 @@
             "Cho thuê căn hộ",
             "Cho thuê căn hộ mini",
             "Cho thuê căn hộ dịch vụ",
-            "Tìm người ở ghép",
             "Cho thuê mặt bằng"});
             this.cbLoaiBDS.Location = new System.Drawing.Point(16, 10);
             this.cbLoaiBDS.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);

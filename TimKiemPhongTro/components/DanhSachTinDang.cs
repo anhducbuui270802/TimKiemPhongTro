@@ -49,7 +49,7 @@ namespace TimKiemPhongTro.components
                 function.setValueBaiDang(dr, ref bd);
                 flowLayoutPanel1.Controls.Add(bd);
             }
-            flowLayoutPanel1.Height = 270 * dt.Rows.Count + 50;
+            flowLayoutPanel1.Height = 276 * dt.Rows.Count + 50;
             this.Height = flowLayoutPanel1.Height + 150;
         }
 

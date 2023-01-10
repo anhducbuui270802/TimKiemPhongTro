@@ -64,9 +64,9 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnHoanThanh = new CustomButton.VBButton();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label20 = new System.Windows.Forms.Label();
+            this.btnHoanThanh = new CustomButton.VBButton();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numDientich)).BeginInit();
@@ -307,7 +307,6 @@
             "Cho thuê căn hộ ",
             "Cho thuê căn hộ mini",
             "Cho thuê căn hộ dịch vụ ",
-            "Tìm người ở ghép",
             "Cho thuê mặt bằng"});
             this.cbLoaiBDS.Location = new System.Drawing.Point(3, 71);
             this.cbLoaiBDS.Name = "cbLoaiBDS";
@@ -472,26 +471,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnHoanThanh
-            // 
-            this.btnHoanThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.btnHoanThanh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
-            this.btnHoanThanh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnHoanThanh.BorderRadius = 10;
-            this.btnHoanThanh.BorderSize = 0;
-            this.btnHoanThanh.FlatAppearance.BorderSize = 0;
-            this.btnHoanThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoanThanh.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoanThanh.ForeColor = System.Drawing.Color.White;
-            this.btnHoanThanh.Location = new System.Drawing.Point(621, 1732);
-            this.btnHoanThanh.Name = "btnHoanThanh";
-            this.btnHoanThanh.Size = new System.Drawing.Size(150, 40);
-            this.btnHoanThanh.TabIndex = 27;
-            this.btnHoanThanh.Text = "Hoàn thành";
-            this.btnHoanThanh.TextColor = System.Drawing.Color.White;
-            this.btnHoanThanh.UseVisualStyleBackColor = false;
-            this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
-            // 
             // dateTimePicker
             // 
             this.dateTimePicker.Font = new System.Drawing.Font("Calibri", 10.2F);
@@ -511,6 +490,26 @@
             this.label20.Size = new System.Drawing.Size(133, 21);
             this.label20.TabIndex = 30;
             this.label20.Text = "Thời gian hết hạn";
+            // 
+            // btnHoanThanh
+            // 
+            this.btnHoanThanh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnHoanThanh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
+            this.btnHoanThanh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnHoanThanh.BorderRadius = 10;
+            this.btnHoanThanh.BorderSize = 0;
+            this.btnHoanThanh.FlatAppearance.BorderSize = 0;
+            this.btnHoanThanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoanThanh.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoanThanh.ForeColor = System.Drawing.Color.White;
+            this.btnHoanThanh.Location = new System.Drawing.Point(621, 1732);
+            this.btnHoanThanh.Name = "btnHoanThanh";
+            this.btnHoanThanh.Size = new System.Drawing.Size(150, 40);
+            this.btnHoanThanh.TabIndex = 27;
+            this.btnHoanThanh.Text = "Hoàn thành";
+            this.btnHoanThanh.TextColor = System.Drawing.Color.White;
+            this.btnHoanThanh.UseVisualStyleBackColor = false;
+            this.btnHoanThanh.Click += new System.EventHandler(this.btnHoanThanh_Click);
             // 
             // NoiDungTin
             // 

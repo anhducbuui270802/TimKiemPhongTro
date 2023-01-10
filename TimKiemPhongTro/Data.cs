@@ -300,6 +300,7 @@ namespace TimKiemPhongTro
             bd.IDNguoiDang = id;
             bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
             bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
+            bd.LoaBDS = dr["LoaiBDS"].ToString();
         }
     }
 }

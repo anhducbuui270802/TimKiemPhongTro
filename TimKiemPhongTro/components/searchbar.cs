@@ -15,6 +15,7 @@ namespace TimKiemPhongTro.components
         public searchbar()
         {
             InitializeComponent();
+            loaibds = tinh = quan = phuong = gia = dientich = "";
         }
 
         public static string loaibds, tinh, quan, phuong, gia, dientich;
@@ -56,7 +57,7 @@ namespace TimKiemPhongTro.components
                 switch (cbGia.SelectedIndex)
                 {
                     case 0:
-                        gia = "GiaPhong <= 1";
+                        gia = "GiaPhong <= 1 and";
                         break;
                     case 1:
                         gia = "GiaPhong >= 1 and GiaPhong <= 2 and";
@@ -174,7 +175,7 @@ namespace TimKiemPhongTro.components
                 case 7:
                     gia = "GiaPhong >= 15 and";
                     break;
-               
+
             }
             flag = true;
             var trangchu = Application.OpenForms.OfType<TrangChu>().Single();
@@ -210,6 +211,6 @@ namespace TimKiemPhongTro.components
             trangchu.LoadDanhSach(search());
         }
 
-        
+
     }
 }

@@ -32,6 +32,14 @@ namespace TimKiemPhongTro.components
         private string _idbai;
         private int _trangthai;
         private string _thoigianhethan;
+        private string _loaiBDS;
+
+        [Category("Custom Props")]
+        public string ThoiGianHetHan
+        {
+            get { return _thoigianhethan; }
+            set { _thoigianhethan = value; }
+        }
 
 
         [Category("Custom Props")]
@@ -43,10 +51,10 @@ namespace TimKiemPhongTro.components
 
 
         [Category("Custom Props")]
-        public string ThoiGianHetHan
+        public string LoaBDS
         {
-            get { return _thoigianhethan; }
-            set { _thoigianhethan = value; }
+            get { return _loaiBDS; }
+            set { _loaiBDS = value; }
         }
 
         [Category("Custom Props")]

@@ -39,10 +39,12 @@ namespace TimKiemPhongTro.components
                 }
 
                 DateTime ngayhethan = Convert.ToDateTime(sql.GetFieldValues($"""select ThoiGianHetHan from BAIDANG where IdBai = '{id}'"""));
-                if(trangthai == 3 && ngayhethan < DateTime.Now && Var.user.Loai == 2)
+                if(trangthai == 3 && ngayhethan < DateTime.Now)
                 {
                     btnWarning.Visible = true;
-                }    
+                }
+                lbThoiHan.Text = ngayhethan.ToString()
+;                panel1.Visible = true;  
             }
         }
 
@@ -137,8 +139,11 @@ namespace TimKiemPhongTro.components
 
         private void btnWarning_Click(object sender, EventArgs e)
         {
-            GiaHan gh = new GiaHan(IdBai);
-            gh.ShowDialog();
+           if(Var.user.Loai == 2)
+            {
+                GiaHan gh = new GiaHan(IdBai);
+                gh.ShowDialog();
+            }
         }
     }
 }
