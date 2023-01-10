@@ -40,22 +40,7 @@ namespace TimKiemPhongTro.components
                     foreach (DataRow dr in dt.Rows)
                     {
                         baidang bd = new baidang();
-                        bd.Title = dr["TieuDe"].ToString().ToUpper();
-                        bd.GiaPhong = dr["GiaPhong"].ToString();
-                        bd.DienTich = dr["DienTich"].ToString() + "m2";
-                        bd.DiaChi = dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
-                        bd.MoTa = dr["MoTa"].ToString();
-                        bd.ImgPhong = Image.FromFile(dr["HinhAnh"].ToString());
-                        string id = dr["IdNguoiDang"].ToString();
-                        bd.TenNguoiDung = sql.GetFieldValues("select HoTen from NGUOIDUNG where IdNguoiDung = '" + id + "'");
-                        bd.ImgNguoiDung = Image.FromFile(sql.GetFieldValues("select Avt from NGUOIDUNG where IdNguoiDung = '" + id + "'"));
-                        bd.SDT = sql.GetFieldValues("select SDT from NGUOIDUNG where IdNguoiDung = '" + id + "'");
-                        bd.DiaChiChinhXac = dr["SoNha"].ToString() + ", " + dr["Pho"].ToString() + ", " + dr["Phuong"].ToString() + ", " + dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
-                        bd.ThoiGian = dr["ThoiGianDang"].ToString();
-                        bd.IDBai = dr["IdBai"].ToString();
-                        bd.IDNguoiDang = id;
-                        bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
-                        bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
+                        function.setValueBaiDang(dr, ref bd);
                         YeuThichLichSuItem yeuThichLichSuItem = new YeuThichLichSuItem(0, idbai);
                         yeuThichLichSuItem.Time = "";
                         yeuThichLichSuItem.Controls.Add(bd);
@@ -80,22 +65,7 @@ namespace TimKiemPhongTro.components
                     foreach (DataRow dr in dt.Rows)
                     {
                         baidang bd = new baidang();
-                        bd.Title = dr["TieuDe"].ToString().ToUpper();
-                        bd.GiaPhong = dr["GiaPhong"].ToString();
-                        bd.DienTich = dr["DienTich"].ToString() + "m2";
-                        bd.DiaChi = dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
-                        bd.MoTa = dr["MoTa"].ToString();
-                        bd.ImgPhong = Image.FromFile(dr["HinhAnh"].ToString());
-                        string id = dr["IdNguoiDang"].ToString();
-                        bd.TenNguoiDung = sql.GetFieldValues("select HoTen from NGUOIDUNG where IdNguoiDung = '" + id + "'");
-                        bd.ImgNguoiDung = Image.FromFile(sql.GetFieldValues("select Avt from NGUOIDUNG where IdNguoiDung = '" + id + "'"));
-                        bd.SDT = sql.GetFieldValues("select SDT from NGUOIDUNG where IdNguoiDung = '" + id + "'");
-                        bd.DiaChiChinhXac = dr["SoNha"].ToString() + ", " + dr["Pho"].ToString() + ", " + dr["Phuong"].ToString() + ", " + dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
-                        bd.ThoiGian = dr["ThoiGianDang"].ToString();
-                        bd.IDBai = dr["IdBai"].ToString();
-                        bd.IDNguoiDang = id;
-                        bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
-                        bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
+                        function.setValueBaiDang(dr, ref bd);
                         YeuThichLichSuItem yeuThichLichSuItem = new YeuThichLichSuItem(1, idbai);
                         yeuThichLichSuItem.Time = "Thời điểm xem gần nhất:\n" + sql.GetFieldValues("select ThoiGian from LICHSU where IdBai = '" + idbai + "'");
                         yeuThichLichSuItem.Controls.Add(bd);
@@ -113,22 +83,7 @@ namespace TimKiemPhongTro.components
                 foreach (DataRow dr in dt.Rows)
                 {
                     baidang bd = new baidang();
-                    bd.Title = dr["TieuDe"].ToString().ToUpper();
-                    bd.GiaPhong = dr["GiaPhong"].ToString();
-                    bd.DienTich = dr["DienTich"].ToString() + "m2";
-                    bd.DiaChi = dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
-                    bd.MoTa = dr["MoTa"].ToString();
-                    bd.ImgPhong = Image.FromFile(dr["HinhAnh"].ToString());
-                    string id = dr["IdNguoiDang"].ToString();
-                    bd.TenNguoiDung = sql.GetFieldValues("select HoTen from NGUOIDUNG where IdNguoiDung = '" + id + "'");
-                    bd.ImgNguoiDung = Image.FromFile(sql.GetFieldValues("select Avt from NGUOIDUNG where IdNguoiDung = '" + id + "'"));
-                    bd.SDT = sql.GetFieldValues("select SDT from NGUOIDUNG where IdNguoiDung = '" + id + "'");
-                    bd.DiaChiChinhXac = dr["SoNha"].ToString() + ", " + dr["Pho"].ToString() + ", " + dr["Phuong"].ToString() + ", " + dr["Quan"].ToString() + ", " + dr["Tinh"].ToString();
-                    bd.ThoiGian = dr["ThoiGianDang"].ToString();
-                    bd.IDBai = dr["IdBai"].ToString();
-                    bd.IDNguoiDang = id;
-                    bd.TrangThai = int.Parse(dr["TrangThai"].ToString());
-                    bd.ThoiGianHetHan = dr["ThoiGianHetHan"].ToString();
+                    function.setValueBaiDang(dr, ref bd);
                     YeuThichLichSuItem yeuThichLichSuItem = new YeuThichLichSuItem(2, dr["IdBai"].ToString());
                     yeuThichLichSuItem.Time = "Thời gian đăng:\n" + dr["ThoiGianDang"].ToString();
                     yeuThichLichSuItem.Controls.Add(bd);
